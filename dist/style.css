@@ -1,7 +1,1 @@
-.header__logo {
-  background-color: #fff;
-}
-.header__nav {
-  background-color: #fff;
-}
-
+.header__logo{width:auto;height:100px;background-image:url(images/lg.png)}.header__nav{background-color:#fff}
