@@ -1,4 +1,4 @@
-import style from './style.css';
+import './style.less';
 
 import _ from 'lodash';
 

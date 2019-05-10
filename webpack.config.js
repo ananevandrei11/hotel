@@ -19,7 +19,7 @@ const config = {
       template: "./src/index.pug"
     }),
     new MiniCssExtractPlugin({
-     filename: '[name].css'
+     filename: 'style.css'
     }),
     new CleanWebpackPlugin (),
     new webpack.ProvidePlugin({
@@ -34,14 +34,11 @@ const config = {
         use: ["pug-loader"]
       },
       {
-        test: /\.css$/,
-        use: [{
-          loader: MiniCssExtractPlugin.loader
-          },
-          {
-            loader: 'css-loader'
-          }
-        ],
+        test: /\.less$/,
+        use: [ MiniCssExtractPlugin.loader,
+              'css-loader',
+              'less-loader' // compiles Less to CSS
+              ],
       },
     ]
   }
