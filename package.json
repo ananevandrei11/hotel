@@ -4,6 +4,8 @@
   "description": "project hotel fsd",
   "private": true,
   "dependencies": {
+    "jquery": "^3.4.1",
+    "popper.js": "^1.15.0",
     "webpack": "^4.30.0"
   },
   "devDependencies": {
