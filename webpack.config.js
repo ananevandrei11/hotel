@@ -1,4 +1,5 @@
-const HtmlWebpackPlugin = require ('html-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const path = require('path');
 const config = {
   entry: {
@@ -10,23 +11,35 @@ const config = {
   },
   devServer: {
     port: 3000,
-},
-plugins: [
-  new HtmlWebpackPlugin({
-    template: "./src/index.pug"
-  }),
-],
-module: {
-  rules: [
-    { 
-      test: /\.pug$/,
-      use: ["pug-loader"]
-    },
-  ]
-}
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: "./src/index.pug"
+    }),
+    new MiniCssExtractPlugin({
+     filename: '[name].css'
+    })
+  ],
+  module: {
+    rules: [{
+        test: /\.pug$/,
+        use: ["pug-loader"]
+      },
+      {
+        test: /\.css$/,
+        use: [{
+          loader: MiniCssExtractPlugin.loader
+          },
+          {
+            loader: 'css-loader'
+          }
+        ],
+      },
+    ]
+  }
 };
 module.exports = (env, argv) => {
   if (argv.mode === 'development') {}
-   if (argv.mode === 'production') {}
+  if (argv.mode === 'production') {}
   return config;
-  }
+}
