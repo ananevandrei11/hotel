@@ -29,4 +29,23 @@
 }
 .header__nav .nav_list {
   display: flex;
+  list-style-type: none;
+}
+.header__nav .nav_list_item {
+  margin-right: 50px;
+}
+.header__nav .nav_list_item:last-child {
+  margin: 0px;
+}
+.header__nav .nav_list_item .nav_list_item_link {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(31, 32, 65, 0.5);
+}
+.header__nav .nav_list_item .nav_list_item_link:first-child {
+  font-weight: bold;
+  color: rgba(31, 32, 65, 0.75);
 }
