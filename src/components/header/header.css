@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "Montserrat-Regular";
+  /* Гарнитура шрифта */
+  src: url(../header/Montserrat-Regular.ttf) format('truetype');
+  /* Путь к файлу со шрифтом */
+}
 .header {
   display: flex;
   width: 1440px;
@@ -17,35 +23,48 @@
   height: 40px;
 }
 .header__logo .logo-text {
-  width: 53.19px;
-  height: 12.95px;
-  margin-top: 13.33px;
-  margin-bottom: 13.72px;
+  width: 53px;
+  height: 13px;
+  margin-top: 13px;
+  margin-bottom: 14px;
   padding-left: 12.5px;
 }
 .header__nav {
+  display: flex;
   width: 527px;
   height: 21px;
+  margin: 26px 30px 23px 297px;
 }
 .header__nav .nav_list {
   display: flex;
-  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 .header__nav .nav_list_item {
-  margin-right: 50px;
+  margin-left: 30px;
 }
-.header__nav .nav_list_item:last-child {
-  margin: 0px;
+.header__nav .nav_list_item:first-child {
+  margin: 0;
 }
-.header__nav .nav_list_item .nav_list_item_link {
-  font-family: Montserrat;
+.header__nav .nav_list_item_link {
+  text-decoration: none;
+  font-family: "Montserrat-Regular";
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
   color: rgba(31, 32, 65, 0.5);
 }
-.header__nav .nav_list_item .nav_list_item_link:first-child {
+.header__nav .nav_list_item_link svg {
+  align-items: center;
+  text-align: center;
+  margin-left: 2px;
+}
+.header__nav .nav_list_item:nth-child(4) {
+  margin-left: 20px;
+}
+.header__nav .nav_list_item:first-child .nav_list_item_link {
   font-weight: bold;
   color: rgba(31, 32, 65, 0.75);
 }
