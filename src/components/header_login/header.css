@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Montserrat-Regular";
   /* Гарнитура шрифта */
-  src: url(../header/Montserrat-Regular.ttf) format('truetype');
+  src: url(../header_login/Montserrat-Regular.ttf) format('truetype');
   /* Путь к файлу со шрифтом */
 }
 .header {
