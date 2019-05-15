@@ -27,7 +27,7 @@
   height: 13px;
   margin-top: 13px;
   margin-bottom: 14px;
-  padding-left: 12.5px;
+  padding-left: 12.0px;
 }
 .header__nav {
   display: flex;
@@ -99,4 +99,18 @@
   line-height: 15px;
   text-transform: uppercase;
   color: #ffffff;
+}
+@font-face {
+  font-family: "Quicksand-Bold";
+  /* Гарнитура шрифта */
+  src: url(../color&type/Quicksand-Bold.ttf) format('truetype');
+  /* Путь к файлу со шрифтом */
+}
+.title_main {
+  font-family: "Quicksand-Bold";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: #1F2041;
 }

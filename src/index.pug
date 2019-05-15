@@ -6,6 +6,9 @@ html(lang="en")
         meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
     body
         include components/header_login/header.pug
-
-        div(class="header_2")
-        include components/header_entry/header_2.pug
+      
+        include components/color&type/color&type.pug
+        +title_h1('This one is the sub-section or widget title')
+        +title_h2('Next one is the item title inside widgets')
+        
+        
