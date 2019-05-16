@@ -4,19 +4,28 @@
   src: url(../color&type/Quicksand-Bold.ttf) format('truetype');
   /* Путь к файлу со шрифтом */
 }
-.title_main {
+.title_lg {
   font-family: "Quicksand-Bold";
   font-style: normal;
   font-weight: bold;
-  font-size: 22px;
+  font-size: 24px;
   line-height: 30px;
   color: #1F2041;
 }
-.title_middle {
+.title_md {
   font-family: "Quicksand-Bold";
   font-style: normal;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 19px;
   line-height: 24px;
-  color: #b7b7be;
+  color: #1F2041;
+}
+.title_sm {
+  font-family: "Montserrat-Regular";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1F2041;
 }

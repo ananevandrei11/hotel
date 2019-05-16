@@ -1,0 +1,64 @@
+.header {
+  display: flex;
+  width: 1440px;
+  height: 70px;
+  background: #FFFFFF;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+}
+.header__logo {
+  display: flex;
+  width: 105.69px;
+  height: 40px;
+  margin-left: 133px;
+  margin-top: 15px;
+}
+.header__logo .logo-img {
+  width: 40px;
+  height: 40px;
+}
+.header__logo .logo-text {
+  width: 53px;
+  height: 13px;
+  margin-top: 13px;
+  margin-bottom: 14px;
+  padding-left: 12.0px;
+}
+.entry .header__nav {
+  display: flex;
+  width: 530px;
+  height: 21px;
+  margin: 25px 30px 24px 350px;
+}
+.entry .header__nav .nav_list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.entry .header__nav .nav_list_item {
+  margin-left: 28px;
+}
+.entry .header__nav .nav_list_item:first-child {
+  margin: 0;
+}
+.entry .header__nav .nav_list_item_link {
+  text-decoration: none;
+  font-family: "Montserrat-Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(31, 32, 65, 0.5);
+}
+.entry .header__nav .nav_list_item_link svg {
+  align-items: center;
+  text-align: center;
+  margin-left: 5px;
+}
+.entry .header__nav .nav_list_item:nth-child(4) {
+  margin-left: 25px;
+}
+.entry .header__nav .nav_list_item:first-child .nav_list_item_link {
+  font-weight: bold;
+  color: rgba(31, 32, 65, 0.75);
+}

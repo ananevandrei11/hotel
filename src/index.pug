@@ -4,11 +4,15 @@ html(lang="en")
         meta(charset="utf-8")
         title 
         meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
-    body
-        include components/header_login/header.pug
+    include components/body/body.pug
+        include components/header_lg/header_lg.pug
       
         include components/color&type/color&type.pug
         +title_h1('This one is the sub-section or widget title')
         +title_h2('Next one is the item title inside widgets')
+        +title_h3('This is a label or CTA text')
+
+        //- include components/header_en/header_en.pug
         
+    
         
