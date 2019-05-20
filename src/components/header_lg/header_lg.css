@@ -4,52 +4,53 @@
   src: url(../header_lg/Montserrat-Regular.ttf) format('truetype');
   /* Путь к файлу со шрифтом */
 }
-.header {
+.header_login {
   display: flex;
+  flex-wrap: wrap;
   width: 1440px;
   height: 70px;
   background: #FFFFFF;
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
 }
-.header .logo {
+.header_login .logo {
   display: flex;
   width: 105.69px;
   height: 40px;
   margin-left: 133px;
   margin-top: 15px;
 }
-.header .logo__img {
+.header_login .logo__img {
   width: 40px;
   height: 40px;
 }
-.header .logo__text {
+.header_login .logo__text {
   width: 53px;
   height: 13px;
   margin-top: 10px;
   margin-left: 12px;
 }
-.header .nav {
+.header_login .nav {
   display: flex;
   width: 540px;
   height: 21px;
   margin: 22.5px 16px 23px 298px;
 }
-.header .nav__list {
+.header_login .nav__list {
   display: flex;
   margin: 0;
   padding: 0;
   list-style: none;
 }
-.header .nav__list__item {
+.header_login .nav__list__item {
   margin-left: 29px;
 }
-.header .nav__list__item:first-child {
+.header_login .nav__list__item:first-child {
   margin: 0;
 }
-.header .nav__list__item:last-child {
+.header_login .nav__list__item:last-child {
   margin-left: 27px;
 }
-.header .nav__list__item__link {
+.header_login .nav__list__item__link {
   text-decoration: none;
   font-family: "Montserrat-Regular";
   font-style: normal;
@@ -58,22 +59,22 @@
   line-height: 17px;
   color: rgba(31, 32, 65, 0.5);
 }
-.header .nav__list__item__link svg {
+.header_login .nav__list__item__link svg {
   align-items: center;
   text-align: center;
   margin-left: 3.75px;
 }
-.header .nav__list__item:nth-child(4) {
+.header_login .nav__list__item:nth-child(4) {
   margin-left: 25px;
 }
-.header .nav__list__item:first-child .nav__list__item__link {
+.header_login .nav__list__item:first-child .nav__list__item__link {
   font-weight: bold;
   color: rgba(31, 32, 65, 0.75);
 }
-.header__button {
+.header_login .btn {
   display: flex;
 }
-.header__button .btn_wait {
+.header_login .btn .btn_wait {
   background-color: #ffffff;
   border: 2px solid #BC9CFF;
   border-radius: 22px;
@@ -89,7 +90,7 @@
   margin: 18px 20px 18px 0px;
   padding: 8px 19px 9px 19px;
 }
-.header__button .btn_purple {
+.header_login .btn .btn_purple {
   margin: 18px 120px 18px 0px;
   padding: 10px 21px 10px 19px;
   background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
