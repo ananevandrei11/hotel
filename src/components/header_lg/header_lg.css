@@ -6,7 +6,6 @@
 }
 .header_login {
   display: flex;
-  flex-wrap: wrap;
   width: 1440px;
   height: 70px;
   background: #FFFFFF;
@@ -74,7 +73,7 @@
 .header_login .btn {
   display: flex;
 }
-.header_login .btn .btn_wait {
+.header_login .btn .btn-white {
   background-color: #ffffff;
   border: 2px solid #BC9CFF;
   border-radius: 22px;
@@ -90,7 +89,7 @@
   margin: 18px 20px 18px 0px;
   padding: 8px 19px 9px 19px;
 }
-.header_login .btn .btn_purple {
+.header_login .btn .btn-purple {
   margin: 18px 120px 18px 0px;
   padding: 10px 21px 10px 19px;
   background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);

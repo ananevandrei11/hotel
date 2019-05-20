@@ -1,6 +1,39 @@
 @font-face {
   font-family: "Montserrat-Regular";
   /* Гарнитура шрифта */
-  src: url(../header_lg/Montserrat-Regular.ttf) format('truetype');
+  src: url(../form_elements/Montserrat-Regular.ttf) format('truetype');
   /* Путь к файлу со шрифтом */
+}
+.btn {
+  width: auto;
+  height: auto;
+  font-family: "Montserrat-Regular";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 14.5px 20px;
+  border-radius: 22px;
+}
+.btn-purple {
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  color: #ffffff;
+}
+.btn-white {
+  background: #ffffff;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #BC9CFF;
+  color: #BC9CFF;
+  border-radius: 22px;
+  padding: 12.5px 18px;
+}
+.btn-purple:hover {
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  opacity: 0.5;
+}
+.btn-white:hover {
+  border-color: rgba(188, 156, 255, 0.5);
 }
