@@ -1,7 +1,9 @@
 @font-face {
-    font-family: "Montserrat-Regular"; /* Гарнитура шрифта */
-    src: url(../header_lg/Montserrat-Regular.ttf) format('truetype'); /* Путь к файлу со шрифтом */
-   }
+    font-family: "Montserrat-Regular";
+    /* Гарнитура шрифта */
+    src: url(../header_lg/Montserrat-Regular.ttf) format('truetype');
+    /* Путь к файлу со шрифтом */
+}
 
 .header_login {
     display: flex;
@@ -9,8 +11,8 @@
     height: 70px;
     background: #FFFFFF;
     box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
-  
-// HEADER__LOGO
+
+    // HEADER__LOGO
     .logo {
         display: flex;
         width: 105.69px;
@@ -30,8 +32,8 @@
             margin-left: 12px;
         }
     }
-    
-// HEADER__NAV
+
+    // HEADER__NAV
     .nav {
         display: flex;
         width: 540px;
@@ -46,12 +48,15 @@
 
             &__item {
                 margin-left: 29px;
+
                 &:first-child {
                     margin: 0;
                 }
+
                 &:last-child {
                     margin-left: 27px;
                 }
+
                 &__link {
                     text-decoration: none;
                     font-family: "Montserrat-Regular";
@@ -59,20 +64,22 @@
                     font-weight: normal;
                     font-size: 14px;
                     line-height: 17px;
-                    
+
                     color: rgba(31, 32, 65, 0.5);
+
                     svg {
                         align-items: center;
                         text-align: center;
                         margin-left: 3.75px;
-                      }
+                    }
                 }
             }
 
-            
+
             &__item:nth-child(4) {
                 margin-left: 25px;
             }
+
             &__item:first-child .nav__list__item__link {
                 font-weight: bold;
                 color: rgba(31, 32, 65, 0.75);
@@ -80,45 +87,45 @@
         }
 
     }
-// HEADER__BUTTON
-    .btn {
+
+    // HEADER__BUTTON
+    .button {
         display: flex;
-        
-        .btn-white {
-            // width: 79px;
-            // height: 34px;
-            background-color: #ffffff;
-            border: 2px solid #BC9CFF;
-            border-radius: 22px;
-            text-decoration: none;
+        .btn {
             font-family: "Montserrat-Regular";
             font-style: normal;
             font-weight: bold;
-            font-size: 11px;
+            font-size: 12px;
             line-height: 15px;
-            letter-spacing: 0.5px;
             text-transform: uppercase;
-            color: #BC9CFF;
-            margin:18px 20px 18px 0px;
-            padding: 8px 19px 9px 19px;
+            text-decoration: none;
+            border-radius: 22px;
         }
-      .btn-purple {
-        // width: 101px;
-        // height: 34px;
-        margin:18px 120px 18px 0px;
-        padding: 10px 21px 10px 19px;
-        background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-        border-radius: 22px;
-        text-decoration: none;
-        font-family: "Montserrat-Regular";
-        font-style: normal;
-        font-weight: bold;
-        font-size: 11px;
-        line-height: 15px;
-        letter-spacing: 0.5px;
-        text-transform: uppercase;
-        color: #ffffff;
-        
+
+        .btn-purple {
+            background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+            color: #ffffff;
+            margin: 15px 140px 20px 0px;
+            padding: 9px 20px 10px 20px;
+        }
+
+        .btn-white {
+            background: #ffffff;
+            border-style: solid;
+            border-width: 2px;
+            border-color: #BC9CFF;
+            color: #BC9CFF;
+            border-radius: 22px;
+            margin: 16px 17px 20px 0px;
+            padding: 6px 20px 7px 18px;
+        }
+
+        .btn-purple:hover {
+            background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%);
+        }
+
+        .btn-white:hover {
+            border-color: rgba(188, 156, 255, 0.5);
         }
     }
 }
