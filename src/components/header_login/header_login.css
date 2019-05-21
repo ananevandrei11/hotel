@@ -1,55 +1,64 @@
 @font-face {
   font-family: "Montserrat-Regular";
   /* Гарнитура шрифта */
-  src: url(../header_lg/Montserrat-Regular.ttf) format('truetype');
+  src: url(../header_login/Montserrat-Regular.ttf) format('truetype');
   /* Путь к файлу со шрифтом */
 }
-.header_login {
+.header {
   display: flex;
   width: 1440px;
   height: 70px;
   background: #FFFFFF;
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
 }
-.header_login .logo {
+.header .btn-white {
+  margin: 18px 20px 18px 0px;
+  padding: 7px 18px 8px 18px;
+}
+.header .btn-purple {
+  margin: 16.5px 140px 19px 0px;
+  padding: 10px 20px 10px 20px;
+}
+.logo {
   display: flex;
   width: 105.69px;
   height: 40px;
-  margin-left: 133px;
-  margin-top: 15px;
 }
-.header_login .logo__img {
+.logo__img {
   width: 40px;
   height: 40px;
 }
-.header_login .logo__text {
+.logo__text {
   width: 53px;
   height: 13px;
   margin-top: 10px;
   margin-left: 12px;
 }
-.header_login .nav {
+.header-logo {
+  margin-left: 133px;
+  margin-top: 15px;
+}
+.nav {
   display: flex;
   width: 540px;
   height: 21px;
-  margin: 22.5px 16px 23px 298px;
 }
-.header_login .nav__list {
+.nav__list {
   display: flex;
   margin: 0;
   padding: 0;
   list-style: none;
 }
-.header_login .nav__list__item {
+.nav__item {
   margin-left: 29px;
 }
-.header_login .nav__list__item:first-child {
+.nav__item:first-child {
   margin: 0;
 }
-.header_login .nav__list__item:last-child {
+.nav__item:last-child {
   margin-left: 27px;
 }
-.header_login .nav__list__item__link {
+.nav__link {
   text-decoration: none;
   font-family: "Montserrat-Regular";
   font-style: normal;
@@ -58,22 +67,25 @@
   line-height: 17px;
   color: rgba(31, 32, 65, 0.5);
 }
-.header_login .nav__list__item__link svg {
+.nav__link svg {
   align-items: center;
   text-align: center;
   margin-left: 3.75px;
 }
-.header_login .nav__list__item:nth-child(4) {
+.nav__item:nth-child(4) {
   margin-left: 25px;
 }
-.header_login .nav__list__item:first-child .nav__list__item__link {
+.nav__item:first-child .nav__link {
   font-weight: bold;
   color: rgba(31, 32, 65, 0.75);
 }
-.header_login .button {
+.header-nav {
+  margin: 22.5px 16px 23px 297.5px;
+}
+.button {
   display: flex;
 }
-.header_login .button .btn {
+.btn {
   font-family: "Montserrat-Regular";
   font-style: normal;
   font-weight: bold;
@@ -83,25 +95,20 @@
   text-decoration: none;
   border-radius: 22px;
 }
-.header_login .button .btn-purple {
-  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-  color: #ffffff;
-  margin: 15px 140px 20px 0px;
-  padding: 9px 20px 10px 20px;
-}
-.header_login .button .btn-white {
+.btn-white {
   background: #ffffff;
   border-style: solid;
   border-width: 2px;
   border-color: #BC9CFF;
   color: #BC9CFF;
-  border-radius: 22px;
-  margin: 16px 17px 20px 0px;
-  padding: 6px 20px 7px 18px;
 }
-.header_login .button .btn-purple:hover {
-  background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%);
-}
-.header_login .button .btn-white:hover {
+.btn-white:hover {
   border-color: rgba(188, 156, 255, 0.5);
+}
+.btn-purple {
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  color: #ffffff;
+}
+.btn-purple:hover {
+  background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%);
 }

@@ -1,0 +1,144 @@
+@font-face {
+    font-family: "Montserrat-Regular";
+    /* Гарнитура шрифта */
+    src: url(../header_login/Montserrat-Regular.ttf) format('truetype');
+    /* Путь к файлу со шрифтом */
+}
+
+.header {
+    display: flex;
+    width: 1440px;
+    height: 70px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+
+    .btn-white {
+        margin: 18px 20px 18px 0px;
+        padding: 7px 18px 8px 18px;
+    }
+
+    .btn-purple {
+        margin: 16.5px 140px 19px 0px;
+        padding: 10px 20px 10px 20px;
+    }
+}
+
+
+// HEADER__LOGO
+.logo {
+    display: flex;
+    width: 105.69px;
+    height: 40px;
+
+    &__img {
+        width: 40px;
+        height: 40px;
+    }
+
+    &__text {
+        width: 53px;
+        height: 13px;
+        margin-top: 10px;
+        margin-left: 12px;
+    }
+}
+
+.header-logo {
+    margin-left: 133px;
+    margin-top: 15px;
+}
+
+// HEADER__NAV
+.nav {
+    display: flex;
+    width: 540px;
+    height: 21px;
+
+    &__list {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    &__item {
+        margin-left: 29px;
+
+        &:first-child {
+            margin: 0;
+        }
+
+        &:last-child {
+            margin-left: 27px;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        font-family: "Montserrat-Regular";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        color: rgba(31, 32, 65, 0.5);
+
+        svg {
+            align-items: center;
+            text-align: center;
+            margin-left: 3.75px;
+        }
+    }
+
+    &__item:nth-child(4) {
+        margin-left: 25px;
+    }
+
+    &__item:first-child .nav__link {
+        font-weight: bold;
+        color: rgba(31, 32, 65, 0.75);
+    }
+}
+
+.header-nav {
+    margin: 22.5px 16px 23px 297.5px;
+}
+
+// HEADER__BUTTON
+.button {
+    display: flex;
+}
+
+.btn {
+    font-family: "Montserrat-Regular";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 22px;
+}
+
+
+.btn-white {
+    background: #ffffff;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #BC9CFF;
+    color: #BC9CFF;
+
+
+    &:hover {
+        border-color: rgba(188, 156, 255, 0.5);
+    }
+
+}
+
+.btn-purple {
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    color: #ffffff;
+
+    &:hover {
+        background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%);
+    }
+}
