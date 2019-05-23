@@ -4,6 +4,11 @@
   src: url(../header_login/Montserrat-Regular.ttf) format('truetype');
   /* Путь к файлу со шрифтом */
 }
+.header-footer {
+  width: 1440px;
+  height: 1350px;
+  background: #F4F4F6;
+}
 .header {
   display: flex;
   width: 1440px;
@@ -19,20 +24,16 @@
   margin: 16.5px 140px 19px 0px;
   padding: 10px 20px 10px 20px;
 }
+.header-login {
+  margin: 150px 0px 40px 0px;
+}
+.header-entry {
+  margin: 40px 0px 40px 0px;
+}
 .logo {
-  display: flex;
   width: 105.69px;
   height: 40px;
-}
-.logo__img {
-  width: 40px;
-  height: 40px;
-}
-.logo__text {
-  width: 53px;
-  height: 13px;
-  margin-top: 10px;
-  margin-left: 12px;
+  background-image: url(../header_login/logo.png);
 }
 .header-logo {
   margin-left: 133px;
@@ -80,7 +81,7 @@
   color: rgba(31, 32, 65, 0.75);
 }
 .header-nav {
-  margin: 22.5px 16px 23px 297.5px;
+  margin: 26px 16px 23px 297.5px;
 }
 .button {
   display: flex;

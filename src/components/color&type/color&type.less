@@ -5,6 +5,142 @@
     /* Путь к файлу со шрифтом */
 }
 
+@font-face {
+    font-family: "Montserrat-Regular";
+    /* Гарнитура шрифта */
+    src: url(../color&type/Montserrat-Regular.ttf) format('truetype');
+    /* Путь к файлу со шрифтом */
+}
+
+.conteiner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 25px;
+}
+
+.color-type {
+    width: 1440px;
+    height: 900px;
+    background: #ffffff;
+}
+
+.color {
+    display: block;
+    width: 269.26px;
+    height: auto;
+    border-collapse: collapse;
+
+    tr {
+        height: 10px;
+    }
+
+    td {
+        padding-left: 5px;
+    }
+
+}
+
+.box_color {
+    width: 70px;
+    height: 70px;
+    border-radius: 6px;
+}
+
+.one {
+    background: #1F2041;
+}
+
+.two {
+    background: rgba(31, 32, 65, 0.75);
+}
+
+.three {
+    background: rgba(31, 32, 65, 0.5);
+}
+
+.four {
+    background: rgba(31, 32, 65, 0.25);
+}
+
+.five {
+    background: rgba(31, 32, 65, 0.5);
+}
+
+.six {
+    background: #BC9CFF;
+}
+
+.seven {
+    background: #6FCF97;
+}
+
+.setting_color {
+    font-family: "Quicksand-Bold";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 15px;
+    align-items: center;
+    color: #1F2041;
+    text-align: left;
+}
+
+.name_color {
+    font-family: "Quicksand-Bold";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 15px;
+    align-items: center;
+    color: #1F2041;
+    text-align: left;
+}
+
+.text {
+    display: block;
+    width: 403px;
+    height: 321px;
+    border-collapse: collapse;
+
+    tr {
+        height: auto;
+    }
+
+    td {
+        text-align: top;
+        vertical-align: top;
+        padding-left: 10px;
+    }
+
+    tr:nth-child(2) p {
+        font-size: 19px;
+        line-height: 23px;
+    }
+
+    tr:nth-child(3) p {
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    tr:nth-child(4) p {
+        font-size: 14px;
+        line-height: 24px
+    }
+}
+
+
+p {
+    font-family: "Montserrat-Regular";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: right;
+    color: rgba(31, 32, 65, 0.25);
+}
+
+
 .title_lg {
     font-family: "Quicksand-Bold";
     font-style: normal;
@@ -12,6 +148,7 @@
     font-size: 24px;
     line-height: 30px;
     color: #1F2041;
+    text-align: left;
 }
 
 .title_md {
@@ -21,6 +158,7 @@
     font-size: 19px;
     line-height: 24px;
     color: #1F2041;
+    text-align: left;
 }
 
 .title_sm {
@@ -31,4 +169,15 @@
     line-height: 15px;
     text-transform: uppercase;
     color: #1F2041;
+    text-align: left;
+}
+
+.paragraph {
+    font-family: "Montserrat-Regular";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75);
+    text-align: left;
 }
