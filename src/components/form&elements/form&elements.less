@@ -1,0 +1,129 @@
+@font-face {
+    font-family: "Montserrat-Regular";
+    src: url(../form&elements/Montserrat-Regular.ttf) format('truetype');
+}
+.form-elements {
+    position: relative;
+    width: 1440px;
+    height: 1853px;
+    background: #ffffff;
+
+}
+   .form {
+    display: block;
+    width: 320px;
+    height: 67px;
+    border: 1px solid red;
+   }
+   .form-checbox {
+    display: inline-block;
+   }
+   // label {
+   //  display: block;
+   // }
+   // input {
+   //  display: block;
+   // }
+   .label {
+    display: block;
+    font-family: "Montserrat-Regular";;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #1F2041;
+    margin-bottom: 5px;
+   }
+   .label-checkbox {
+    display: inline-block;
+    font-family: "Montserrat-Regular";;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(31, 32, 65, 0.5);
+    margin-left:25px;
+   }
+   input[type="email"] {
+    display: block;
+    width: 320px;
+    height: 44px;
+    background: #FFFFFF;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-family: "Montserrat-Regular";;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(31, 32, 65, 0.25);
+    padding-left:15px;
+    &:hover, &:focus {
+     border: 1px solid rgba(31, 32, 65, 0.5);
+     color: rgba(31, 32, 65, 0.75);
+    }
+   }
+   input[type="checkbox"] {
+    display: none;
+    
+   }
+   
+   .checkbox {
+     display: inline-block;
+     position: relative;
+   }
+   .checkbox:before {
+     content:"";
+     position: absolute;
+     width: 20px;
+     height: 20px;
+     background: #FFFFFF;
+     border: 1px solid rgba(31, 32, 65, 0.25);
+     box-sizing: border-box;
+     border-radius: 4px;
+     transition: .0s;
+    }
+   input[type="checkbox"]:checked+.checkbox:before {
+    background-image: url(../form&elements/vector.png);
+    background-repeat: no-repeat;
+    background-position: 4px 5px;
+    }
+
+    .btn {
+        width: auto;
+        height: auto;
+        font-family: "Montserrat-Regular";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 14.5px 20px;
+        border-radius: 22px;
+    }
+
+    .btn-purple {
+        background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+        color: #ffffff;
+    }
+
+    .btn-white {
+        background: #ffffff;
+        border-style: solid;
+        border-width:  2px;
+        border-color: #BC9CFF;
+        color: #BC9CFF;
+        border-radius: 22px;
+        padding: 12.5px 18px;
+    }
+
+    .btn-purple:hover {
+        background: linear-gradient(180deg,rgba(188,156,255, 0.5) 0%, rgba(139,164,249, 0.5) 100%);
+    }
+
+    .btn-white:hover {
+        border-color: rgba(188, 156, 255, 0.5);
+    }

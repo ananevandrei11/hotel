@@ -1,106 +1,70 @@
-mixin title_h1(title)
-    h1(class="title_lg")= title
-mixin title_h2(title)
-    h1(class="title_md")= title
-mixin title_h3(title)
-    h1(class="title_sm")= title
+mixin title-lg(title)
+    h1(class="title-lg")= title
+mixin title-md(title)
+    h2(class="title-md")= title
+mixin title-sm(title)
+    h3(class="title-sm")= title
 mixin text(title)
-    p(class="paragraph")= title
+    p(class="text")= title
   
-mixin box_color
-    p.box_color(class!=attributes.class)
-mixin setting_color(title)
-    p.setting_color= title
-mixin name_color(title) 
-    p.name_color= title
+mixin box-color
+    p.box-color(class!=attributes.class)
+mixin setting-color(title)
+    p.setting-color= title
+mixin name-color(title) 
+    p.name-color= title
       
  
   
 div(class="conteiner color-type")
-    table(class="color")
-        tr
-            td(rowspan="2")
-              +box_color(class="one")
-            td
-              +setting_color('Dark Shade 100%')
-        tr
-            td
-              +name_color('#1F2041')
-          
-        tr
-            td(rowspan="2")
-              +box_color(class="two")
-            td
-              +setting_color('Dark Shade 75%')
-        tr
-            td
-              +name_color('#1F2041')
-          
-        tr
-            td(rowspan="2")
-              +box_color(class="three")
-            td
-              +setting_color('Dark Shade 50%')
-        tr
-            td
-              +name_color('#1F2041')
-          
-        tr
-            td(rowspan="2")
-              +box_color(class="four")
-            td
-              +setting_color('Dark Shade 25%')
-        tr
-            td
-              +name_color('#1F2041')
-
-        tr
-            td(rowspan="2")
-              +box_color(class="five")
-            td
-              +setting_color('Dark Shade 5%')
-        tr
-            td
-              +name_color('#1F2041')
-
-        tr
-            td(rowspan="2")
-              +box_color(class="six")
-            td
-              +setting_color('Purple')
-        tr
-            td
-              +name_color('#BC9CFF')
-
-        tr
-            td(rowspan="2")
-              +box_color(class="seven")
-            td
-              +setting_color('Green')
-        tr
-            td
-              +name_color('#6FCF97')            
-      
-      
-    table(class="text")
-        tr
-            td
-                p H1
-            td
-                +title_h1('This one is the sub-section or widget title')
-        tr  
-            td
-                p H2
-            td 
-                +title_h2('Next one is the item title inside widgets')
-        tr  
-            td
-                p H3
-            td    
-                +title_h3('This is a label or CTA text')
-
-        tr  
-            td
-                p Body
-            td    
-                +text('This is the body text which is used for most of the design, like paragraphs, lists, etc.')
+ div(class="logo-uikit")
+ 
+ div(class="elements-color")
+  div(class="column-one")
+   +box-color(class="one")
+   +setting-color('Dark Shade 100%')
+   +name-color('#1F2041')
+   
+  div(class="column-one")
+   +box-color(class="two")
+   +setting-color('Dark Shade 75%')
+   +name-color('#1F2041')
+   
+  div(class="column-one") 
+   +box-color(class="three")
+   +setting-color('Dark Shade 50%')
+   +name-color('#1F2041')
+   
+  div(class="column-one") 
+   +box-color(class="four")
+   +setting-color('Dark Shade 25%')
+   +name-color('#1F2041')
+   
+  div(class="column-one") 
+   +box-color(class="five")
+   +setting-color('Dark Shade 5%')
+   +name-color('#1F2041')
+   
+  div(class="column-one") 
+   +box-color(class="six")
+   +setting-color('Purple')
+   +name-color('#BC9CFF')
+   
+  div(class="column-one") 
+   +box-color(class="seven")
+   +setting-color('Green')
+   +name-color('#6FCF97')
+   
+   
+ div(class="elements-text")
+  div(class="column-one")
+   p h1
+   p h2
+   p h3
+   p Body
+  div(class="column-two") 
+   +title-lg('This one is the sub-section or widget title')
+   +title-md('Next one is the item title inside widgets')
+   +title-sm('This is a label or CTA text')
+   +text('This is the body text which is used for most of the design, like paragraphs, lists, etc.')
+  

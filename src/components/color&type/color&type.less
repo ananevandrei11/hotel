@@ -15,40 +15,54 @@
 .conteiner {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
     margin-top: 25px;
 }
 
 .color-type {
+    position: relative;
     width: 1440px;
     height: 900px;
     background: #ffffff;
+
 }
 
-.color {
+.logo-uikit {
+    background-image: url(../color&type/logo-uikit.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    left: 30px;
+    top: 30px;
+
+}
+
+.elements-color {
     display: block;
-    width: 269.26px;
-    height: auto;
-    border-collapse: collapse;
+    position: absolute;
+    width: 320px;
+    left: 150px;
+    top: 145px;
 
-    tr {
-        height: 10px;
+
+    .column-one {
+        display: flex;
+        flex-wrap: wrap;
     }
-
-    td {
-        padding-left: 5px;
-    }
-
 }
 
-.box_color {
+
+
+.box-color {
     width: 70px;
     height: 70px;
     border-radius: 6px;
+    margin-right: 5px;
 }
 
 .one {
     background: #1F2041;
+    margin-top: 0;
 }
 
 .two {
@@ -64,7 +78,7 @@
 }
 
 .five {
-    background: rgba(31, 32, 65, 0.5);
+    background: rgba(31, 32, 65, 0.05);
 }
 
 .six {
@@ -73,9 +87,10 @@
 
 .seven {
     background: #6FCF97;
+
 }
 
-.setting_color {
+.setting-color {
     font-family: "Quicksand-Bold";
     font-style: normal;
     font-weight: bold;
@@ -84,9 +99,10 @@
     align-items: center;
     color: #1F2041;
     text-align: left;
+    margin-right: 5px;
 }
 
-.name_color {
+.name-color {
     font-family: "Quicksand-Bold";
     font-style: normal;
     font-weight: normal;
@@ -97,51 +113,77 @@
     text-align: left;
 }
 
-.text {
-    display: block;
+.elements-text {
+    display: flex;
+    position: absolute;
     width: 403px;
-    height: 321px;
-    border-collapse: collapse;
+    left: 846px;
+    top: 145px;
 
-    tr {
-        height: auto;
+    // border: 1px solid red;
+    .column-one {
+        width: 37px;
+        height: 297px;
+        margin-bottom: 24px;
+
+        p {
+            font-family: "Montserrat-Regular";
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 29px;
+            text-align: right;
+            color: rgba(31, 32, 65, 0.25);
+            text-transform: uppercase;
+
+            &:nth-child(1) {
+                margin: 0px 30px 81px 8px;
+            }
+
+            &:nth-child(2) {
+                font-size: 19px;
+                line-height: 23px;
+                margin: 0px 30px 76px 10px;
+            }
+
+            &:nth-child(3) {
+                font-size: 12px;
+                line-height: 15px;
+                margin: 0px 30px 47px 20px;
+            }
+
+            &:nth-child(4) {
+                font-size: 14px;
+                line-height: 24px;
+                text-transform: none;
+                margin-right: 30px;
+            }
+        }
     }
 
-    td {
-        text-align: top;
-        vertical-align: top;
-        padding-left: 10px;
-    }
+    .column-two {
+        width: 336px;
+        height: 297px;
+        margin-left: 30px;
 
-    tr:nth-child(2) p {
-        font-size: 19px;
-        line-height: 23px;
-    }
+        &:nth-child(2) .title-md {
+            margin-top: 50px;
 
-    tr:nth-child(3) p {
-        font-size: 12px;
-        line-height: 15px;
-    }
+        }
 
-    tr:nth-child(4) p {
-        font-size: 14px;
-        line-height: 24px
+        &:nth-child(2) .title-sm {
+            margin-top: 50px;
+
+        }
+
+        &:nth-child(2) .text {
+            margin-top: 48px;
+
+        }
     }
 }
 
-
-p {
-    font-family: "Montserrat-Regular";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 29px;
-    text-align: right;
-    color: rgba(31, 32, 65, 0.25);
-}
-
-
-.title_lg {
+.title-lg {
     font-family: "Quicksand-Bold";
     font-style: normal;
     font-weight: bold;
@@ -149,9 +191,11 @@ p {
     line-height: 30px;
     color: #1F2041;
     text-align: left;
+    text-transform: none;
+    margin-top: 0px;
 }
 
-.title_md {
+.title-md {
     font-family: "Quicksand-Bold";
     font-style: normal;
     font-weight: bold;
@@ -159,9 +203,10 @@ p {
     line-height: 24px;
     color: #1F2041;
     text-align: left;
+    text-transform: none;
 }
 
-.title_sm {
+.title-sm {
     font-family: "Montserrat-Regular";
     font-style: normal;
     font-weight: bold;
@@ -172,7 +217,7 @@ p {
     text-align: left;
 }
 
-.paragraph {
+.text {
     font-family: "Montserrat-Regular";
     font-style: normal;
     font-weight: normal;
@@ -180,4 +225,5 @@ p {
     line-height: 24px;
     color: rgba(31, 32, 65, 0.75);
     text-align: left;
+    text-transform: none;
 }
