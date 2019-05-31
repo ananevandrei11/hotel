@@ -1,0 +1,88 @@
+.location_city, .insert_emoticon-(1), .insert_emoticon, .location_city-(1), .star_border-(1), .star_border, .star-(1), .star, ., .-(1), ., .-(1), ., .-(1){
+	background: url(sprites.png) no-repeat;
+}
+
+.location_city{
+	background-position: -255.0000114440918px -1px ;
+	width: 144px;
+	height: 152px;
+}
+
+.insert_emoticon-(1){
+	background-position: 0 -200px ;
+	width: 80px;
+	height: 80px;
+}
+
+.insert_emoticon{
+	background-position: -238.0000114440918px -201px ;
+	width: 160px;
+	height: 160px;
+}
+
+.location_city-(1){
+	background-position: -13.000003814697266px -1px ;
+	width: 72px;
+	height: 76px;
+}
+
+.star_border-(1){
+	background-position: -530.9999923706055px -149px ;
+	width: 40px;
+	height: 38px;
+}
+
+.star_border{
+	background-position: -659.0000228881836px -148px ;
+	width: 80px;
+	height: 76px;
+}
+
+.star-(1){
+	background-position: -529.9999923706055px -2px ;
+	width: 40px;
+	height: 38px;
+}
+
+.star{
+	background-position: -658.0000228881836px 0;
+	width: 80px;
+	height: 76px;
+}
+
+.{
+	background-position: -150px -451px ;
+	width: 96px;
+	height: 78px;
+}
+
+.-(1){
+	background-position: 0 -601px ;
+	width: 42px;
+	height: 42px;
+}
+
+.{
+	background-position: -151px -601px ;
+	width: 84px;
+	height: 84px;
+}
+
+.-(1){
+	background-position: -350px -451px ;
+	width: 42px;
+	height: 42px;
+}
+
+.{
+	background-position: -501px -450px ;
+	width: 84px;
+	height: 84px;
+}
+
+.-(1){
+	background-position: -1px -451px ;
+	width: 48px;
+	height: 40px;
+}
+

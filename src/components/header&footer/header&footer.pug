@@ -10,7 +10,8 @@ mixin navbar(href, title)
 
 div(class="conteiner header-footer")
     div(class="logo-uikit")
-    header(class="header header-login")   
+    
+    header(class="header-login")   
         +logo(class="header-logo")
         
 
@@ -42,11 +43,9 @@ div(class="conteiner header-footer")
             a(class="btn btn-white" href="#") login
             a(class="btn btn-purple" href="#") register
 
-    header(class="header header-entry")   
+    header(class="header-entry")
         +logo(class="header-logo")
-
         
-
 
         nav(class="nav header-nav")
             ul(class="nav__list" )
@@ -70,5 +69,10 @@ div(class="conteiner header-footer")
 
                     li(class="nav__item")
                         a(class="nav__link" href="#") Documentation
+        
+        div(class="dash")
+        p(class="client-name") Cosmin Negoita
 
-    
+    div(class="icon")
+
+        

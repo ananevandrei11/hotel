@@ -11,8 +11,6 @@
   /* Путь к файлу со шрифтом */
 }
 .conteiner {
-  display: flex;
-  flex-wrap: wrap;
   margin-top: 25px;
 }
 .color-type {
