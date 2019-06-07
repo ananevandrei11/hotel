@@ -74,16 +74,17 @@ const config = {
               outputPath: './images',
               useRelativePath: true
             },
-          },
-          {
-            loader: 'image-webpack-loader',
-            options: {
-              mozjpeg: {
-                progressive: true,
-                quality: 70
-              }
-            },
-          },
+          }
+          // },
+          // {
+          //   loader: 'image-webpack-loader',
+          //   options: {
+          //     mozjpeg: {
+          //       progressive: true,
+          //       quality: 70
+          //     }
+          //   },
+          // },
 
         ],
       },
