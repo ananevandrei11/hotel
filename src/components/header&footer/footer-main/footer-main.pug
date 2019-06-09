@@ -1,0 +1,22 @@
+mixin footer-nav-title(name)
+    h3.title-sm= name
+mixin footer-nav-item(href, name)
+    a.link(href=href)= name
+
+div(class="footer")
+    div(class="footer-wide")
+        div(class="footer-box")
+            div(class="footer-logo")
+            p(class="text") Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.
+        div(class="footer-navigation")
+            +footer-nav-title('Navigation')
+            +footer-nav-item('#', 'About Us')
+            +footer-nav-item('#', 'News')
+            +footer-nav-item('#', 'Support')
+            +footer-nav-item('#', 'Products')
+        div(class="footer-aboutus")
+            +footer-nav-title('About us')
+            +footer-nav-item('#', 'Who we are')
+            +footer-nav-item('#', 'Our team')
+            +footer-nav-item('#', 'Careers')
+            +footer-nav-item('#', 'Investors')
