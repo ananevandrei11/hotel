@@ -1,21 +1,23 @@
 
-.conteiner(class="form-elements")
-  form.form(action='')
-    label.label(for='email') text field
-    input#email.input(type='email', name='email', value='Email')
-  form.form.form-checkbox(action='')
-    label.label(for='checkbox') checkbox buttons
-    label
-      input(type='checkbox')
-      p(class="checkbox")
-    label.label-checkbox(for='checkbox') Можно курить
+div.conteiner(class="form-elements")
+  div(class="logo-uikit")
 
-  div
-    form.form(action='')
-      input(type="text" data-range="true" data-multiple-dates-separator=" - " class="datepicker-here")
 
-  div
-    a(class="btn btn-purple" href="#") click me
-    a(class="btn btn-white" href="#") click me
+  div(class="column-one")
+    form(action="#", method="post", id="email-simple")
+      label(class="title-sm", for="email-simple-input") text field
+      input(type="email", form="email-simple", id="email-simple-input", placeholder="Email")
 
-  
+    fieldset
+      label(for='filesB') dropdown
+      select#filesB(name='filesB')
+        option(value='mypodcast' data-class='podcast') Взрослые
+          input(type="number" value="5" min="0" max="100" step="1")
+        option(value='myvideo' data-class='video') Дети
+        option(value='myrss' data-class='rss') Младенцы
+
+
+
+
+  div(class="column-two")
+  div(class="column-three")
