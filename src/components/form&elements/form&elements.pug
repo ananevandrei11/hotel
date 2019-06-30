@@ -5,19 +5,16 @@ div.conteiner(class="form-elements")
 
   div(class="column-one")
     form(action="#", method="post", id="email-simple")
-      label(class="title-sm", for="email-simple-input") text field
+      label(class="title-sm", for="email-simple-input") Text Field
       input(type="email", form="email-simple", id="email-simple-input", placeholder="Email")
 
-    fieldset
-      label(for='filesB') dropdown
-      select#filesB(name='filesB')
-        option(value='mypodcast' data-class='podcast') Взрослые
-          input(type="number" value="5" min="0" max="100" step="1")
-        option(value='myvideo' data-class='video') Дети
-        option(value='myrss' data-class='rss') Младенцы
+    include dropdown-guest/dropdown-guest.pug
 
 
 
 
   div(class="column-two")
+    div
+    a(class="btn btn-purple" href="#") click me
+    a(class="btn btn-white" href="#") click me
   div(class="column-three")
