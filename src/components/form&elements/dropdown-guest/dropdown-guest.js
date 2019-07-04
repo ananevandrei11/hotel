@@ -1,7 +1,7 @@
 $(document).ready(function () {
-  $(".dropdown-btn").click(function () {
-    $(".dropdown-title").toggleClass("opened");
-    $(".dropdown-list").slideToggle(500);
+  $(".dropdown-btn-guest").click(function () {
+    $(".dropdown-title-guest").toggleClass("opened");
+    $(".dropdown-list-guest").slideToggle(500);
   });
 
   $(".adults-minus").click(function () {
@@ -63,7 +63,7 @@ $(document).ready(function () {
     $("#adults").attr('value', '0');
     $("#children").attr('value', '0');
     $("#babies").attr('value', '0');
-    $(".dropdown-text").text("Сколько гостей");
+    $(".dropdown-text-guest").text("Сколько гостей");
     $("#clear").text("");
     $("#clear").css("cursor", "default");
   });
@@ -73,13 +73,13 @@ $(document).ready(function () {
     var childrenNumber = parseFloat($("#children").attr('value'));
     var babiesNumber = parseFloat($("#babies").attr('value'));
     if ((adultsNumber + childrenNumber + babiesNumber) === 1) {
-      $(".dropdown-text").text(adultsNumber + childrenNumber + babiesNumber + " гость");
+      $(".dropdown-text-guest").text(adultsNumber + childrenNumber + babiesNumber + " гость");
     } else if (((adultsNumber + childrenNumber + babiesNumber) > 1) && ((adultsNumber + childrenNumber + babiesNumber) <= 4)) {
-      $(".dropdown-text").text(adultsNumber + childrenNumber + babiesNumber + " гостя");
+      $(".dropdown-text-guest").text(adultsNumber + childrenNumber + babiesNumber + " гостя");
     } else if (((adultsNumber + childrenNumber + babiesNumber) > 4) && ((adultsNumber + childrenNumber + babiesNumber) <= 100)) {
-      $(".dropdown-text").text(adultsNumber + childrenNumber + babiesNumber + " гостей");
+      $(".dropdown-text-guest").text(adultsNumber + childrenNumber + babiesNumber + " гостей");
     } else {
-      $(".dropdown-text").text("Сколько гостей");
+      $(".dropdown-text-guest").text("Сколько гостей");
     }
   });
 });

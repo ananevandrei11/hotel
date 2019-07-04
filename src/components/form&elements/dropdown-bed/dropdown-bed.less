@@ -1,0 +1,139 @@
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('../dropdown-guest/Montserrat-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-Regular-Kirill';
+    src: url('../dropdown-guest/Montserrat-Regular-Kirill.ttf');
+}
+
+.dropdown-bed {
+    .dropdown-title-bed {
+        display: flex;
+        justify-content: space-between;
+        width: 266px;
+        height: 44px;
+        background: #FFFFFF;
+        background: #FFFFFF;
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        box-sizing: border-box;
+        border-radius: 2px;
+    }
+
+    .opened {
+        border: 1px solid rgba(31, 32, 65, 0.5);
+        border-radius: 4px 4px 0 0;
+    }
+
+    .dropdown-text-bed {
+        width: 160px;
+        height: 24px;
+        margin-top: 8px;
+        margin-left: 13px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .dropdown-btn-bed {
+        width: 44px;
+        height: 44px;
+        padding: 0 auto;
+    }
+
+    .dropdown-btn-bed svg {
+        padding: 15.5px;
+    }
+
+    .dropdown-list-bed {
+        display: none;
+        position: absolute;
+        z-index: 100;
+        width: 266px;
+        height: 119px;
+        background: #FFFFFF;
+        border: 1px solid rgba(31, 32, 65, 0.5);
+        border-top: 0;
+        box-sizing: border-box;
+        box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+        border-radius: 0 0 4px 4px;
+    }
+
+    .dropdown-list-container {
+        display: flex;
+        padding-top: 12px;
+        padding-left: 15px;
+    }
+
+    .dropdown-list-item {
+        width: 133px;
+        height: 15px;
+    }
+
+    .dropdown-counter {
+        display: flex;
+        justify-content: space-between;
+        width: 93px;
+        height: 30px;
+        margin-top: -5.5px;
+        margin-left: 18px;
+    }
+
+    .bedroom-minus,
+    .bed-minus,
+    .bathroom-minus {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        padding-left: 10px;
+        color: rgba(31, 32, 65, 0.25);
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        box-sizing: border-box;
+        border-radius: 22px;
+        font-family: "Montserrat-Regular-Kirill";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+        cursor: pointer;
+    }
+
+    .bedroom-plus,
+    .bed-plus,
+    .bathroom-plus {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        padding-left: 8px;
+        padding-top: 2px;
+        color: rgba(31, 32, 65, 0.5);
+        border: 1px solid rgba(31, 32, 65, 0.5);
+        box-sizing: border-box;
+        border-radius: 22px;
+        font-family: "Montserrat-Regular-Kirill";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+        cursor: pointer;
+    }
+
+    .dropdown-number input[type="text"] {
+        width: 30px;
+        height: 27px;
+        border: 0px;
+        color: #1F2041;
+        box-sizing: border-box;
+        font-family: "Montserrat-Regular-Kirill";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+}
