@@ -1,0 +1,157 @@
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url('../dropdown-bed/Montserrat-Regular.svg') format('svg'), url('../dropdown-bed/Montserrat-Regular.woff') format('woff'), url('../dropdown-bed/Montserrat-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat-Regular-Kirill';
+  src: url('../dropdown-bed/Montserrat-Regular-Kirill.svg') format('svg'), url('../dropdown-bed/Montserrat-Regular-Kirill.woff') format('woff'), url('../dropdown-bed/Montserrat-Regular-Kirill.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../dropdown-bed/MaterialIcons-Regular.svg') format('svg'), url('../dropdown-bed/MaterialIcons-Regular.woff') format('woff'), url('../dropdown-bed/MaterialIcons-Regular.ttf') format('truetype');
+}
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+.dropdown-bed .title-sm-rus {
+  margin-bottom: 5px;
+}
+.dropdown-bed .dropdown-title-bed {
+  display: flex;
+  justify-content: space-between;
+  width: 266px;
+  height: 44px;
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px 4px 0 0;
+}
+.dropdown-bed .opened-bed {
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  z-index: 900;
+}
+.dropdown-bed .dropdown-text-bed {
+  width: 160px;
+  height: 24px;
+  margin-top: 8px;
+  margin-left: 13px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.dropdown-bed .dropdown-btn-bed {
+  width: 44px;
+  height: 44px;
+  padding: 0 auto;
+}
+.dropdown-bed .dropdown-btn-bed i {
+  display: flex;
+  justify-content: center;
+  padding-top: 7.5px;
+  color: rgba(31, 32, 65, 0.75);
+}
+.dropdown-bed .dropdown-list-bed {
+  display: none;
+  position: absolute;
+  z-index: 100;
+  width: 266px;
+  height: 119px;
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  border-top: 0;
+  box-sizing: border-box;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  border-radius: 0 0 4px 4px;
+}
+.dropdown-bed .dropdown-list-container {
+  display: flex;
+  padding-top: 12px;
+  padding-left: 15px;
+}
+.dropdown-bed .dropdown-list-item {
+  width: 133px;
+  height: 15px;
+}
+.dropdown-bed .dropdown-counter {
+  display: flex;
+  justify-content: space-between;
+  width: 93px;
+  height: 30px;
+  margin-top: -5.5px;
+  margin-left: 18px;
+}
+.dropdown-bed .bedroom-minus,
+.dropdown-bed .bed-minus,
+.dropdown-bed .bathroom-minus {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding-left: 10px;
+  color: rgba(31, 32, 65, 0.25);
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 22px;
+  font-family: "Montserrat-Regular-Kirill";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  cursor: pointer;
+}
+.dropdown-bed .bedroom-plus,
+.dropdown-bed .bed-plus,
+.dropdown-bed .bathroom-plus {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  padding-left: 8px;
+  padding-top: 2px;
+  color: rgba(31, 32, 65, 0.5);
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  box-sizing: border-box;
+  border-radius: 22px;
+  font-family: "Montserrat-Regular-Kirill";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  cursor: pointer;
+}
+.dropdown-bed .dropdown-number input[type="text"] {
+  width: 30px;
+  height: 27px;
+  border: 0px;
+  color: #1F2041;
+  box-sizing: border-box;
+  font-family: "Montserrat-Regular-Kirill";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  text-transform: uppercase;
+}

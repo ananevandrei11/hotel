@@ -1,6 +1,6 @@
 $(document).ready(function () {
   $(".dropdown-btn-guest").click(function () {
-    $(".dropdown-title-guest").toggleClass("opened");
+    $(".dropdown-title-guest").toggleClass("opened-guest");
     $(".dropdown-list-guest").slideToggle(500);
   });
 
