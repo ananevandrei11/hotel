@@ -6,32 +6,33 @@
   font-family: 'Montserrat-Regular-Kirill';
   src: url('../dayofborn/Montserrat-Regular-Kirill.svg') format('svg'), url('../dayofborn/Montserrat-Regular-Kirill.woff') format('woff'), url('../dayofborn/Montserrat-Regular-Kirill.ttf') format('truetype');
 }
-.dayofborn .title-sm-rus {
+.dayofborn label {
+  display: block;
+  width: 320px;
+  height: 15px;
   margin-bottom: 5px;
 }
-.dayofborn .calendar {
-  display: flex;
-  justify-content: flex-start;
+.dayofborn .calendar #calendar-dayofborn {
   width: 320px;
   height: 44px;
   background: #FFFFFF;
   border: 1px solid rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
   border-radius: 4px;
-}
-.dayofborn .text-rus {
-  border: 0px;
-}
-.dayofborn #calendar-dayofborn {
-  width: 320px;
-  height: 40px;
   padding-left: 15px;
-  font-family: "Montserrat-Regular";
+  font-family: "Montserrat-Regular-Kirill";
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.1pt;
+  color: rgba(31, 32, 65, 0.25);
 }
-.dayofborn #calendar-dayofborn::placeholder {
-  font-size: 14px;
+.dayofborn .calendar #calendar-dayofborn:hover {
+  color: rgba(31, 32, 65, 0.75);
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+.dayofborn .calendar #calendar-dayofborn:focus {
+  color: rgba(31, 32, 65, 0.75);
+  border: 1px solid rgba(31, 32, 65, 0.5);
 }

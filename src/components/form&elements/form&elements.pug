@@ -4,9 +4,11 @@ div.conteiner(class="form-elements")
 
 
   div(class="column-one")
-    form(action="#", method="post", id="email-simple")
-      label(class="title-sm", for="email-simple-input") Text Field
-      input(type="email", form="email-simple", id="email-simple-input", placeholder="Email")
+    div(class="email-form")
+      label(class="title-sm-rus" for="email-simple-input") Text Field
+      div(class="email-simple")
+       input(class="text-rus" type="email", id="email-simple-input", placeholder="Email")
+    
 
     include dropdown-guest/dropdown-guest.pug
 
