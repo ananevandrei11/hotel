@@ -24,6 +24,22 @@
 .form-elements .column-three {
   border: 1px solid grey;
 }
+.form-elements .dropdown-guest {
+  margin-top: 20px;
+  margin-left: 140px;
+}
+.form-elements .dropdown-bed {
+  margin-top: 20px;
+  margin-left: 140px;
+}
+.form-elements .dayofborn {
+  margin-top: 20px;
+  margin-left: 140px;
+}
+.form-elements .email-subscription {
+  margin-top: 20px;
+  margin-left: 140px;
+}
 .email-form {
   margin-top: 141px;
   margin-left: 140px;
@@ -42,12 +58,6 @@
   box-sizing: border-box;
   border-radius: 4px;
   padding-left: 15px;
-  font-family: "Montserrat-Regular-Kirill";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: -0.1pt;
   color: rgba(31, 32, 65, 0.25);
 }
 .email-form .email-simple #email-simple-input::placeholder {
@@ -60,18 +70,6 @@
 .email-form .email-simple #email-simple-input:focus {
   color: rgba(31, 32, 65, 0.75);
   border: 1px solid rgba(31, 32, 65, 0.5);
-}
-.dropdown-guest {
-  margin-top: 20px;
-  margin-left: 140px;
-}
-.dropdown-bed {
-  margin-top: 20px;
-  margin-left: 140px;
-}
-.dayofborn {
-  margin-top: 20px;
-  margin-left: 140px;
 }
 .btn {
   width: auto;
