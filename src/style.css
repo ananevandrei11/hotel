@@ -256,51 +256,52 @@ body {
 .form-elements .column-three {
   border: 1px solid grey;
 }
-#email-simple {
-  width: 320px;
-  height: 67px;
+.form-elements .dropdown-guest {
+  margin-top: 20px;
+  margin-left: 140px;
+}
+.form-elements .dropdown-bed {
+  margin-top: 20px;
+  margin-left: 140px;
+}
+.form-elements .dayofborn {
+  margin-top: 20px;
+  margin-left: 140px;
+}
+.form-elements .email-subscription {
+  margin-top: 20px;
+  margin-left: 140px;
+}
+.email-form {
   margin-top: 141px;
   margin-left: 140px;
 }
-#email-simple label {
+.email-form label {
   display: block;
   width: 320px;
   height: 15px;
   margin-bottom: 5px;
 }
-#email-simple #email-simple-input {
-  display: block;
+.email-form .email-simple #email-simple-input {
   width: 320px;
   height: 44px;
-  padding-left: 15px;
   background: #FFFFFF;
   border: 1px solid rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
   border-radius: 4px;
-  font-family: "Montserrat-Regular";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
-}
-#email-simple #email-simple-input::placeholder {
+  padding-left: 15px;
   color: rgba(31, 32, 65, 0.25);
 }
-#email-simple #email-simple-input:hover {
+.email-form .email-simple #email-simple-input::placeholder {
+  color: rgba(31, 32, 65, 0.25);
+}
+.email-form .email-simple #email-simple-input:hover {
   color: rgba(31, 32, 65, 0.75);
   border: 1px solid rgba(31, 32, 65, 0.5);
 }
-#email-simple #email-simple-input:focus {
+.email-form .email-simple #email-simple-input:focus {
   color: rgba(31, 32, 65, 0.75);
   border: 1px solid rgba(31, 32, 65, 0.5);
-}
-.dropdown-guest {
-  margin-top: 20px;
-  margin-left: 140px;
-}
-.dropdown-bed {
-  margin-top: 20px;
-  margin-left: 140px;
 }
 .btn {
   width: auto;
@@ -676,15 +677,159 @@ body {
   font-family: 'Montserrat-Regular-Kirill';
   src: url('../dayofborn/Montserrat-Regular-Kirill.svg') format('svg'), url('../dayofborn/Montserrat-Regular-Kirill.woff') format('woff'), url('../dayofborn/Montserrat-Regular-Kirill.ttf') format('truetype');
 }
-.dayofborn {
-  display: flex;
-  justify-content: flex-start;
+.dayofborn label {
+  display: block;
+  width: 320px;
+  height: 15px;
+  margin-bottom: 5px;
+}
+.dayofborn .calendar #calendar-dayofborn {
   width: 320px;
   height: 44px;
   background: #FFFFFF;
   border: 1px solid rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
   border-radius: 4px;
+  padding-left: 15px;
+  font-size: 16px;
+  color: rgba(31, 32, 65, 0.25);
+}
+.dayofborn .calendar #calendar-dayofborn:hover {
+  color: rgba(31, 32, 65, 0.75);
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+.dayofborn .calendar #calendar-dayofborn:focus {
+  color: rgba(31, 32, 65, 0.75);
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url('../email-subscription/Montserrat-Regular.svg') format('svg'), url('../email-subscription/Montserrat-Regular.woff') format('woff'), url('../email-subscription/Montserrat-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat-Regular-Kirill';
+  src: url('../email-subscription/Montserrat-Regular-Kirill.svg') format('svg'), url('../email-subscription/Montserrat-Regular-Kirill.woff') format('woff'), url('../email-subscription/Montserrat-Regular-Kirill.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../email-subscription/MaterialIcons-Regular.svg') format('svg'), url('../email-subscription/MaterialIcons-Regular.woff') format('woff'), url('../email-subscription/MaterialIcons-Regular.ttf') format('truetype');
+}
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+.email-subscription label {
+  display: block;
+  width: 267px;
+  height: 15px;
+  margin-bottom: 5px;
+}
+.email-subscription .email-subscription-form {
+  display: flex;
+  justify-content: space-between;
+  width: 267px;
+  height: 44px;
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.email-subscription .email-subscription-form:hover {
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+.email-subscription .email-subscription-form:focus {
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+.email-subscription .email-subscription-form #email-subscription-input {
+  width: 223px;
+  padding-left: 15px;
+  color: rgba(31, 32, 65, 0.25);
+  border: 0px;
+  border-radius: 4px 0px 0px 4px;
+}
+.email-subscription .email-subscription-form #email-subscription-input::placeholder {
+  color: rgba(31, 32, 65, 0.25);
+}
+.email-subscription .email-subscription-form #email-subscription-input:hover {
+  color: rgba(31, 32, 65, 0.75);
+}
+.email-subscription .email-subscription-form #email-subscription-input:focus {
+  color: rgba(31, 32, 65, 0.75);
+}
+.email-subscription .email-subscription-form .email-btn {
+  width: 44px;
+  display: flex;
+  justify-content: center;
+  padding-top: 7.5px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@font-face {
+  font-family: 'Montserrat-Regular-Kirill';
+  src: url('../checkbox-list/Montserrat-Regular-Kirill.svg') format('svg'), url('../checkbox-list/Montserrat-Regular-Kirill.woff') format('woff'), url('../checkbox-list/Montserrat-Regular-Kirill.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../checkbox-list/MaterialIcons-Regular.svg') format('svg'), url('../checkbox-list/MaterialIcons-Regular.woff') format('woff'), url('../checkbox-list/MaterialIcons-Regular.ttf') format('truetype');
+}
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+.checkbox-list {
+  width: 266px;
+  height: 44px;
+  background: #FFFFFF;
+  box-sizing: border-box;
+}
+.checkbox-list .checkbox-list-btn {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: rgba(31, 32, 65, 0.5);
 }
 /*-------------
 GENERAL SETTINGS PAGE
@@ -927,39 +1072,14 @@ GENERAL HEADER
   margin-top: 19px;
   letter-spacing: -0.2pt;
 }
-.footer-main .footer-wide .footer-subscribe #email {
-  display: flex;
-  width: 260px;
-  height: 44px;
+.footer-main .footer-wide .footer-subscribe .email-subscription {
   margin-top: 22px;
-  background: #FFFFFF;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  box-sizing: border-box;
-  border-radius: 4px;
 }
-.footer-main .footer-wide .footer-subscribe #email input[type="email"] {
+.footer-main .footer-wide .footer-subscribe .email-subscription .email-subscription-form {
+  width: 260px;
+}
+.footer-main .footer-wide .footer-subscribe .email-subscription .email-subscription-form .email-subscription-input {
   width: 216px;
-  height: 42px;
-  font-family: "Montserrat-Regular";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  color: rgba(31, 32, 65, 0.25);
-  border: 0px;
-}
-.footer-main .footer-wide .footer-subscribe #email input[type="email"]::placeholder {
-  color: rgba(31, 32, 65, 0.25);
-}
-.footer-main .footer-wide .footer-subscribe #email button {
-  width: 42px;
-  height: 42px;
-  align-items: center;
-  text-align: center;
-  background: #FFFFFF;
-  border: 0px;
-  border-radius: 0;
-  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
 }
 .footer-main .footer-tight {
   display: flex;

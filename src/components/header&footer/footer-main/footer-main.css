@@ -80,6 +80,12 @@
 .footer-main .footer-wide .footer-subscribe .email-subscription {
   margin-top: 22px;
 }
+.footer-main .footer-wide .footer-subscribe .email-subscription .email-subscription-form {
+  width: 260px;
+}
+.footer-main .footer-wide .footer-subscribe .email-subscription .email-subscription-form .email-subscription-input {
+  width: 216px;
+}
 .footer-main .footer-tight {
   display: flex;
   width: 1440px;

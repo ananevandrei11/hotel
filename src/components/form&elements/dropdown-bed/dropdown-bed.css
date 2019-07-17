@@ -63,12 +63,10 @@
 .dropdown-bed .dropdown-btn-bed {
   width: 44px;
   height: 44px;
-  padding: 0 auto;
 }
 .dropdown-bed .dropdown-btn-bed i {
-  display: flex;
-  justify-content: center;
   padding-top: 7.5px;
+  padding-left: 8px;
   color: rgba(31, 32, 65, 0.75);
 }
 .dropdown-bed .dropdown-list-bed {
