@@ -1,17 +1,17 @@
 @font-face {
     font-family: 'Montserrat-Regular-Kirill';
-    src: url('../checkbox-list/Montserrat-Regular-Kirill.svg') format('svg'),
-        url('../checkbox-list/Montserrat-Regular-Kirill.woff') format('woff'),
-        url('../checkbox-list/Montserrat-Regular-Kirill.ttf') format('truetype');
+    src: url('../checkbox-buttons/Montserrat-Regular-Kirill.svg') format('svg'),
+        url('../checkbox-buttons/Montserrat-Regular-Kirill.woff') format('woff'),
+        url('../checkbox-buttons/Montserrat-Regular-Kirill.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Material Icons';
     font-style: normal;
     font-weight: 400;
-    src: url('../checkbox-list/MaterialIcons-Regular.svg') format('svg'),
-        url('../checkbox-list/MaterialIcons-Regular.woff') format('woff'),
-        url('../checkbox-list/MaterialIcons-Regular.ttf') format('truetype');
+    src: url('../checkbox-buttons/MaterialIcons-Regular.svg') format('svg'),
+        url('../checkbox-buttons/MaterialIcons-Regular.woff') format('woff'),
+        url('../checkbox-buttons/MaterialIcons-Regular.ttf') format('truetype');
 }
 
 .material-icons {
@@ -40,40 +40,21 @@
     font-feature-settings: 'liga';
 }
 
-.checkbox-list {
-    .checkbox-list-title {
+.checkbox-buttons {
+    .checkbox-buttons-title {
         display: flex;
         justify-content: space-between;
         width: 266px;
-        height: 44px;
+        height: auto;
         background: #FFFFFF;
         box-sizing: border-box;
-
-        .title-sm-rus {
-            padding-top: 13px;
-            padding-left: 1px;
-        }
-
-        .checkbox-list-btn {
-            width: 44px;
-            color: rgba(31, 32, 65, 0.5);
-
-            i {
-                padding: 8px;
-                color: rgba(31, 32, 65, 0.5);
-            }
-
-            .checkbox-list-btn-open {
-                transform: rotate(180deg);
-            }
-
-        }
+        margin-bottom: 15px;
     }
-
-    .checkbox-list-inputs {
-        display: none;
+    .checkbox-buttons-inputs {
+        display: block;
         width: 266px;
         height: auto;
+
         .checkbox-input-container {
             display: flex;
             width: 222px;
@@ -120,9 +101,5 @@
                 }
             }
         }
-    }
-
-    .checkbox-list-inputs-opened {
-        display: block;
     }
 }

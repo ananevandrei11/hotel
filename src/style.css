@@ -272,6 +272,10 @@ body {
   margin-top: 20px;
   margin-left: 140px;
 }
+.form-elements .checkbox-list {
+  margin-top: 20px;
+  margin-left: 140px;
+}
 .email-form {
   margin-top: 141px;
   margin-left: 140px;
@@ -577,12 +581,10 @@ body {
 .dropdown-bed .dropdown-btn-bed {
   width: 44px;
   height: 44px;
-  padding: 0 auto;
 }
 .dropdown-bed .dropdown-btn-bed i {
-  display: flex;
-  justify-content: center;
   padding-top: 7.5px;
+  padding-left: 8px;
   color: rgba(31, 32, 65, 0.75);
 }
 .dropdown-bed .dropdown-list-bed {
@@ -817,19 +819,106 @@ body {
   /* Support for IE. */
   font-feature-settings: 'liga';
 }
-.checkbox-list {
+.checkbox-list .checkbox-list-title {
+  display: flex;
+  justify-content: space-between;
   width: 266px;
   height: 44px;
   background: #FFFFFF;
   box-sizing: border-box;
 }
-.checkbox-list .checkbox-list-btn {
+.checkbox-list .checkbox-list-title .title-sm-rus {
+  padding-top: 13px;
+  padding-left: 1px;
+}
+.checkbox-list .checkbox-list-title .checkbox-list-btn {
   width: 44px;
-  height: 44px;
+  color: rgba(31, 32, 65, 0.5);
+}
+.checkbox-list .checkbox-list-title .checkbox-list-btn i {
+  padding: 8px;
+  color: rgba(31, 32, 65, 0.5);
+}
+.checkbox-list .checkbox-list-title .checkbox-list-btn .checkbox-list-btn-open {
+  transform: rotate(180deg);
+}
+.checkbox-list .checkbox-list-inputs {
+  display: none;
+  width: 266px;
+  height: auto;
+}
+.checkbox-list .checkbox-list-inputs .checkbox-input-container {
+  width: auto;
+  height: 20px;
+  margin-bottom: 10px;
+}
+.checkbox-list .checkbox-list-inputs .checkbox-input-container .checkbox-input {
+  display: none;
+}
+.checkbox-list .checkbox-list-inputs .checkbox-input-container .text-rus {
   display: flex;
   align-items: center;
-  text-align: center;
   color: rgba(31, 32, 65, 0.5);
+}
+.checkbox-list .checkbox-list-inputs .checkbox-input-container .text-rus::before {
+  content: "check";
+  display: inline-block;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-right: 10px;
+  font-family: 'Material Icons';
+  text-align: center;
+  text-indent: 0px;
+  vertical-align: middle;
+  font-weight: 900;
+  line-height: 20px;
+  color: transparent;
+}
+.checkbox-list .checkbox-list-inputs .checkbox-input-container .checkbox-input:checked + label:before {
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-color: #BC9CFF;
+}
+.checkbox-list .checkbox-list-inputs-opened {
+  display: block;
+}
+@font-face {
+  font-family: 'Montserrat-Regular-Kirill';
+  src: url('../checkbox-buttons/Montserrat-Regular-Kirill.svg') format('svg'), url('../checkbox-buttons/Montserrat-Regular-Kirill.woff') format('woff'), url('../checkbox-buttons/Montserrat-Regular-Kirill.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../checkbox-buttons/MaterialIcons-Regular.svg') format('svg'), url('../checkbox-buttons/MaterialIcons-Regular.woff') format('woff'), url('../checkbox-buttons/MaterialIcons-Regular.ttf') format('truetype');
+}
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: 'liga';
 }
 /*-------------
 GENERAL SETTINGS PAGE

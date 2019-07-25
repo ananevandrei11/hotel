@@ -1,0 +1,36 @@
+mixin checkbox-input(name, value, title)
+    div.checkbox-input-container
+        div.container-for-input
+            input(type="checkbox", class="checkbox-input", id=name, name=name, value=value)
+            label(class="text-rus", for=name)
+        div.container-for-label
+            label(class="text-rus", for=name)= title
+
+
+div(class="checkbox-buttons")
+    div(class="checkbox-buttons-title")
+        div(class="title-sm-rus") Checkbox Buttons
+    div(class="checkbox-buttons-inputs")
+        +checkbox-input("smoking", "smoking", "Можно курить")
+        +checkbox-input("animals", "animals", "Можно с питомцами")
+        +checkbox-input("guests", "guests", "Можно пригласить гостей (до 10 человек)")
+
+    //- div(class="checkbox-buttons-inputs")
+    //-     div.checkbox-input-container
+    //-         div.container-for-input
+    //-             input(type="checkbox", class="checkbox-input", id="smoking", name="smoking", value="smoking")
+    //-             label(for="smoking")
+    //-         div.container-for-label
+    //-             label(class="text-rus", for="smoking") Можно курить
+    //-     div.checkbox-input-container
+    //-         div.container-for-input
+    //-             input(type="checkbox", class="checkbox-input", id="animals", name="animals", value="animals")
+    //-             label(for="animals")
+    //-         div.container-for-label
+    //-             label(class="text-rus", for="animals") Можно с питомцами
+    //-     div.checkbox-input-container
+    //-         div.container-for-input
+    //-             input(type="checkbox", class="checkbox-input", id="guests", name="guests", value="guests")
+    //-             label(for="guests")
+    //-         div.container-for-label
+    //-             label(class="text-rus", for="guests") Можно пригласить гостей (до 10 человек)
