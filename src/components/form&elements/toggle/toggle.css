@@ -1,0 +1,55 @@
+@font-face {
+  font-family: 'Montserrat-Regular-Kirill';
+  src: url('../toggle/Montserrat-Regular-Kirill.svg') format('svg'), url('../toggle/Montserrat-Regular-Kirill.woff') format('woff'), url('../toggle/Montserrat-Regular-Kirill.ttf') format('truetype');
+}
+.toggle-container {
+  display: flex;
+  justify-content: space-between;
+  width: 260px;
+  height: 20px;
+}
+.toggle-container .container-for-input .checkbox-input {
+  display: none;
+}
+.toggle-container .container-for-input label {
+  position: relative;
+}
+.toggle-container .container-for-input label::before {
+  content: " ";
+  display: inline-block;
+  position: absolute;
+  width: 40px;
+  height: 20px;
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+.toggle-container .container-for-input label::after {
+  content: " ";
+  display: inline-block;
+  position: relative;
+  width: 12px;
+  height: 12px;
+  background: rgba(31, 32, 65, 0.25);
+  position: absolute;
+  box-sizing: border-box;
+  border-radius: 10px;
+  top: 4px;
+  left: 4px;
+  z-index: 1;
+}
+.toggle-container .container-for-input .checkbox-input:checked + label:before {
+  border: 1px solid #BC9CFF;
+}
+.toggle-container .container-for-input .checkbox-input:checked + label:after {
+  background: #bc9cff;
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  left: 24px;
+}
+.toggle-container .container-for-label .text-rus {
+  display: flex;
+  padding-top: 2px;
+  color: rgba(31, 32, 65, 0.5);
+  line-height: 18px;
+}

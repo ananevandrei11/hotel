@@ -1,14 +1,10 @@
 mixin radio-input(name, value, title)
     div.container-for-input
-        input(type="radio", class="radio-input", id=value, name=name, value=value)
+        input(type="radio", class="radio-input", id=value, name=name, value=value)&attributes(attributes)
         label(class="text-rus", for=value)
     div.container-for-label
         label(class="text-rus", for=value)= title
 
-
 div(class="radio-buttons")
-    div(class="radio-buttons-title")
-        div(class="title-sm-rus") radio buttons
-    div(class="radio-input-container")
-        +radio-input("gender", "man", "Мужчина")
-        +radio-input("gender", "woman", "Женщина")
+    +radio-input("gender", "man", "Мужчина")(checked)
+    +radio-input("gender", "woman", "Женщина")

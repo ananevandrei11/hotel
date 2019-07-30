@@ -1,7 +1,7 @@
 mixin checkbox-input(name, value, title)
     div.checkbox-input-container
         div.container-for-input
-            input(type="checkbox", class="checkbox-input", id=name, name=name, value=value)
+            input(type="checkbox", class="checkbox-input", id=name, name=name, value=value)&attributes(attributes)
             label(class="text-rus", for=name)
         div.container-for-label
             label(class="text-rus", for=name)= title
@@ -15,8 +15,8 @@ div(class="checkbox-list")
             i(class="material-icons") expand_more
     div(class="checkbox-list-inputs")
         +checkbox-input("breakfest", "breakfest", "Завтрак")
-        +checkbox-input("writing-desk", "writing-desk", "Письменный стол")
-        +checkbox-input("chair-baby", "chair-baby", "Стул для кормления")
-        +checkbox-input("beddy-bye", "beddy-bye", "Кроватка")
+        +checkbox-input("writing-desk", "writing-desk", "Письменный стол")(checked)
+        +checkbox-input("chair-baby", "chair-baby", "Стул для кормления")(checked)
+        +checkbox-input("beddy-bye", "beddy-bye", "Кроватка")(checked)
         +checkbox-input("televisor", "televisor", "Телевизор")
         +checkbox-input("shampoo", "shampoo", "Шампунь")

@@ -48,6 +48,22 @@
   margin-top: 20px;
   margin-left: 140px;
 }
+.form-elements .radio {
+  margin-top: 40px;
+  margin-left: 140px;
+}
+.form-elements .radio-buttons {
+  margin-top: 16px;
+  margin-left: 140px;
+}
+.form-elements .toggle {
+  margin-top: 20px;
+  margin-left: 140px;
+}
+.form-elements .toggle-container {
+  margin-top: 16px;
+  margin-left: 140px;
+}
 .email-form {
   margin-top: 141px;
   margin-left: 140px;
