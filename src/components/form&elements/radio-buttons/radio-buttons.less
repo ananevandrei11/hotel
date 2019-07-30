@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'Montserrat-Regular-Kirill';
+    src: url('../radio-buttons/Montserrat-Regular-Kirill.svg') format('svg'),
+        url('../radio-buttons/Montserrat-Regular-Kirill.woff') format('woff'),
+        url('../radio-buttons/Montserrat-Regular-Kirill.ttf') format('truetype');
+}
+
+.radio-buttons {
+    width: 221px;
+    height: 55px;
+
+    .radio-buttons-title {
+        display: flex;
+        justify-content: space-between;
+        width: auto;
+        height: 15px;
+        background: #FFFFFF;
+        box-sizing: border-box;
+        font-weight: bold;
+    }
+
+    .radio-input-container {
+        width: 221px;
+        height: 24px;
+        display: flex;
+        margin-top: 16px;
+
+        .container-for-input {
+            display: flex;
+            width: 20px;
+            height: 20px;
+            box-sizing: border-box;
+            margin-right: 9px;
+
+            input[type="radio"] {
+                display: none;
+            }
+
+            .radio-input+label {
+                -webkit-appearance: none;
+                content: " ";
+                display: inline-block;
+                position: relative;
+                width: 20px;
+                height: 20px;
+                background: #FFFFFF;
+                border: 1px solid #BC9CFF;
+                box-sizing: border-box;
+                border-radius: 10px;
+            }
+
+            .radio-input:checked+label:after {
+                content: ' ';
+                width: 12px;
+                height: 12px;
+                border-radius: 50px;
+                position: absolute;
+                top: 3px;
+                left: 3px;
+                background: rgb(188, 156, 255);
+                background: linear-gradient(180deg, rgba(188, 156, 255, 1) 0%, rgba(139, 164, 249, 1) 100%);
+            }
+
+
+
+        }
+
+        .container-for-label {
+            width: 68px;
+            height: 24px;
+            margin-right: 20px;
+
+            &:last-child {
+                margin-right: 0px;
+            }
+
+            label {
+                display: block;
+
+                line-height: 18px;
+            }
+        }
+
+    }
+}
