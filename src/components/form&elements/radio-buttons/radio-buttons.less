@@ -17,7 +17,7 @@
             height: 20px;
             box-sizing: border-box;
             margin-right: 9px;
-
+            cursor: pointer;
             input[type="radio"] {
                 display: none;
             }
@@ -33,8 +33,11 @@
                 box-sizing: border-box;
                 border-radius: 10px;
                 border: 1px solid rgba(31, 32, 65, 0.25);
+                cursor: pointer;
             }
-
+            .radio-input:checked+label {
+                border: 1px solid #BC9CFF;
+            }
             .radio-input:checked+label:after {
                 content: ' ';
                 width: 12px;
@@ -45,11 +48,9 @@
                 left: 3px;
                 background: rgb(188, 156, 255);
                 background: linear-gradient(180deg, rgba(188, 156, 255, 1) 0%, rgba(139, 164, 249, 1) 100%);
-                
+                cursor: pointer;
             }
-
-
-
+            
         }
 
         .container-for-label {
@@ -63,8 +64,8 @@
 
             label {
                 display: block;
-
                 line-height: 18px;
+                cursor: pointer;
             }
         }
 
