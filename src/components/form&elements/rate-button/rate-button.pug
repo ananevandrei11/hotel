@@ -1,0 +1,9 @@
+mixin stars(name)
+    i(class="material-icons star-border", id=name) star_border
+
+div(class="rate-button" id="rate-button")
+    +stars("one-star")
+    +stars("two-star")
+    +stars("three-star")
+    +stars("four-star")
+    +stars("five-star")
