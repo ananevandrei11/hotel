@@ -1,0 +1,12 @@
+mixin bullet-list-one(title)
+    div(class="bullet-list-container")
+        div(class="bullet-circle")
+        div(class="bullet-text")= title
+
+div(class="bullet-list")
+    div(class="bullet-list-title")
+        div(class="title-sm-rus") bullet list
+    div(class="bullet-list-box")
+        +bullet-list-one("Нельзя с питомцами")
+        +bullet-list-one("Без вечеринок и мероприятий")
+        +bullet-list-one("Время прибытия — после 13:00, а выезд до 12:00")
