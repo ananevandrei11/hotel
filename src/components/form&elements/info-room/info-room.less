@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'Montserrat-Regular-Kirill';
+    src: url('../info-room/Montserrat-Regular-Kirill.svg') format('svg'),
+        url('../info-room/Montserrat-Regular-Kirill.woff') format('woff'),
+        url('../info-room/Montserrat-Regular-Kirill.ttf') format('truetype');
+}
+
+.info-room {
+    width: 291px;
+    height: auto;
+
+    .icon-text-list {
+        display: flex;
+        width: 280px;
+        height: 88px;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        border-bottom-color: rgba(31, 32, 65, 0.1);
+        &:last-child {
+            border-bottom-width: 0px;
+        }
+        .insert_emoticon {
+            width: 48px;
+            height: 48px;
+            margin-left: 2px;
+            margin-right: 11px;
+            margin-top: 20px;
+            background: url("../info-room/sprites-info-room.png");
+            background-repeat: no-repeat;
+            background-position: -3px -1px;
+        }
+        .location_city {
+            width: 48px;
+            height: 48px;
+            margin-left: 2px;
+            margin-right: 11px;
+            margin-top: 20px;
+            background: url("../info-room/sprites-info-room.png");
+            background-repeat: no-repeat;
+            background-position: -51.5px -1px;
+        }
+        .whatshot {
+            width: 48px;
+            height: 48px;
+            margin-left: 2px;
+            margin-right: 11px;
+            margin-top: 20px;
+            background: url("../info-room/sprites-info-room.png");
+            background-repeat: no-repeat;
+            background-position: -103px -1.5px;
+        }
+
+
+        .text-equipment {
+            width: 233px;
+            overflow-y: hidden;
+            .text-rus-equipment {
+                margin-top: 24px;
+                font-family: 'Montserrat-Regular-Kirill';
+                font-style: normal;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 16px;
+                color: rgba(31, 32, 65, 0.75);
+                text-transform: none;
+            }
+
+
+            .text-rus {
+                margin-top: -5px;
+                line-height: 16px;
+            }
+        }
+    }
+}

@@ -1,0 +1,12 @@
+mixin info-room-one(name, title, text)
+    div.icon-text-list
+        div(class=name)
+        div.text-equipment
+            p(class="text-rus-equipment")= title
+            p(class="text-rus")= text
+
+
+div(class="info-room")
+    +info-room-one("insert_emoticon", "Комфорт", "Шумопоглощающие стены")
+    +info-room-one("location_city", "Удобство", "Окно в каждой из спален")
+    +info-room-one("whatshot", "Уют", "Номер оснащён камином")
