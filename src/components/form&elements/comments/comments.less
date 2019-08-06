@@ -1,0 +1,103 @@
+@font-face {
+    font-family: 'Montserrat-Regular-Kirill';
+    src: url('../comments/Montserrat-Regular-Kirill.svg') format('svg'),
+        url('../comments/Montserrat-Regular-Kirill.woff') format('woff'),
+        url('../comments/Montserrat-Regular-Kirill.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../like-button/MaterialIcons-Regular.svg') format('svg'),
+        url('../like-button/MaterialIcons-Regular.woff') format('woff'),
+        url('../like-button/MaterialIcons-Regular.ttf') format('truetype');
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+.comments {
+    position: absolute;
+    width: 711px;
+    height: auto;
+    padding: 0 auto;
+    overflow-y: hidden;
+    box-sizing: border-box;
+    .commentator {
+        width: 278px;
+        height: 48px;
+        display: flex;
+        justify-content: flex-start;
+        .commentator-img {
+            width: 48px;
+            height: 48px;
+            background-image: url(../comments/commentator-img.png);
+            border: 2px solid #FFFFFF;
+            box-sizing: border-box;
+            box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.1);
+            border-radius: 32px;
+            margin-right: 10px;
+            background-repeat: no-repeat;
+            background-position: -21px -12px;
+        }
+
+        .commentator-id {
+            width: 220px;
+            height: 48px;
+            overflow-y: hidden;
+
+            .commentator-name {
+                margin-top: 5px;
+                margin-bottom: 0px;
+                font-weight: bold;
+                line-height: 14px;
+
+            }
+
+            .comment-date {
+                margin-top: 10px;
+                line-height: 14px;
+            }
+        }
+    }
+
+    .revie {
+        width: 711px;
+        height: auto;
+        display: flex;
+        justify-content: flex-start;
+        .like-button {
+            margin-left: 6px;
+            margin-right: 14px;
+            margin-top: 13px;
+        }
+        .revie-text {
+            width: 653px;
+            height: auto;
+            margin-top: 10px;
+        }
+    }
+
+}
