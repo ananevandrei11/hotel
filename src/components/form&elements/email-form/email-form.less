@@ -1,0 +1,38 @@
+.email-form {
+
+    label {
+        display: block;
+        width: 320px;
+        height: 15px;
+        margin-bottom: 5px;
+        cursor: pointer;
+    }
+
+    .email-simple {
+        #email-simple-input {
+            width: 320px;
+            height: 44px;
+            background: #FFFFFF;
+            border: 1px solid rgba(31, 32, 65, 0.25);
+            box-sizing: border-box;
+            border-radius: 4px;
+            padding-left: 15px;
+            color: rgba(31, 32, 65, 0.25);
+
+            &::placeholder {
+                color: rgba(31, 32, 65, 0.25);
+            }
+
+            &:hover {
+                color: rgba(31, 32, 65, 0.75);
+                border: 1px solid rgba(31, 32, 65, 0.5);
+            }
+
+            &:focus {
+                color: rgba(31, 32, 65, 0.75);
+                border: 1px solid rgba(31, 32, 65, 0.5);
+            }
+        }
+    }
+
+}
