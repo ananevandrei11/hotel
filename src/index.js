@@ -1,6 +1,7 @@
 import './style.less';
 import 'jquery';
 import _ from 'lodash';
+import './jquery-ui.min.js';
 import './components/form&elements/dropdown-guest/dropdown-guest.js';
 import './components/form&elements/dropdown-bed/dropdown-bed.js';
 import './components/form&elements/checkbox-list/checkbox-list.js';
@@ -8,3 +9,4 @@ import './components/form&elements/radio-buttons/radio-buttons.js';
 import './components/form&elements/like-button/like-button.js';
 import './components/form&elements/rate-button/rate-button.js';
 import './components/form&elements/comments/comments.js';
+import './components/form&elements/range-slider/range-slider.js';

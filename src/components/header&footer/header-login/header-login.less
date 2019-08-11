@@ -30,15 +30,6 @@ HEADER-LOGIN
     box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
     margin-top: 150px;
 
-    .btn-white {
-        margin: 18px 20px 18px 0px;
-        padding: 7px 18px 8px 18px;
-    }
-
-    .btn-purple {
-        margin: 16.5px 140px 19px 0px;
-        padding: 10px 20px 10px 20px;
-    }
 
     .header-nav {
         margin: 23px 16px 26px 297.5px;
@@ -119,7 +110,22 @@ HEADER-NAVIGATION
 /*-------------
 HEADER-BUTTON
 ------------ */
-.button {
+.header-buttons {
     display: flex;
+    z-index: 0;
+    margin-top: 22px;
+    .btn-white {
+        padding: 8.5px 18.5px 8px 18.5px;
+        &:after {
+            content: "login";
+            padding: 9.5px 20px 9.5px 19px;
+            top: -5px;
+            left: -1px;
+        }
+    }
+    .btn-purple {
+        margin-left: 20px;
+        padding: 9px 20px 10px 19px;
+    }
 }
 

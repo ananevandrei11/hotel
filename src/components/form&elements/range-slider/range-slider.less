@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'Montserrat-Regular-Kirill';
+    src: url('../radio-buttons/Montserrat-Regular-Kirill.svg') format('svg'),
+        url('../radio-buttons/Montserrat-Regular-Kirill.woff') format('woff'),
+        url('../radio-buttons/Montserrat-Regular-Kirill.ttf') format('truetype');
+}
+
+
+
+
+.range-slider {
+    width: 266px;
+    height: 48px;
+
+    .range-slider-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .price {
+            width: 102px;
+            font-weight: normal;
+            color: rgba(31, 32, 65, 0.5);
+            border: 0;
+        }
+    }
+
+    .ui-slider {
+        margin-top: 23px;
+        width: 266px !important;
+        height: 6px;
+        background: #FFFFFF !important;
+        border: 1px solid rgba(31, 32, 65, 0.25) !important;
+        box-sizing: border-box;
+        border-radius: 3px;
+    }
+    .ui-slider-horizontal .ui-slider-range {
+        top: -1px;
+        height: 6px;
+      }
+    .ui-slider-handle {
+        margin-top: -2px;
+        width: 12px !important;
+        height: 12px !important;
+        background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%) !important;
+        border: 2px solid #FFFFFF !important;
+        border-radius: 10px;
+    }
+
+    .ui-slider-range {
+        height: 8px;
+        background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+        border-radius: 3px;
+    }
+}

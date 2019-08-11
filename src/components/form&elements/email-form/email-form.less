@@ -1,38 +1,33 @@
+@font-face {
+    font-family: 'Montserrat-Regular-Kirill';
+    src: url('../email-form/Montserrat-Regular-Kirill.woff') format('woff'),
+        url('../email-form/Montserrat-Regular-Kirill.ttf') format('truetype');
+}
 .email-form {
-
-    label {
+    width: 320px;
+    height: 67px;
+    &__label {
         display: block;
         width: 320px;
         height: 15px;
         margin-bottom: 5px;
         cursor: pointer;
+        color: #1F2041;
     }
-
-    .email-simple {
-        #email-simple-input {
-            width: 320px;
-            height: 44px;
-            background: #FFFFFF;
-            border: 1px solid rgba(31, 32, 65, 0.25);
-            box-sizing: border-box;
-            border-radius: 4px;
-            padding-left: 15px;
-            color: rgba(31, 32, 65, 0.25);
-
-            &::placeholder {
+  &__input {
+        width: 320px;
+        height: 44px;
+        background: #FFFFFF;
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        box-sizing: border-box;
+        border-radius: 4px;
+        padding-left: 15px;
+        color: rgba(31, 32, 65, 0.75);
+    &::placeholder {
                 color: rgba(31, 32, 65, 0.25);
-            }
-
-            &:hover {
-                color: rgba(31, 32, 65, 0.75);
-                border: 1px solid rgba(31, 32, 65, 0.5);
-            }
-
-            &:focus {
-                color: rgba(31, 32, 65, 0.75);
-                border: 1px solid rgba(31, 32, 65, 0.5);
-            }
-        }
-    }
-
+     }
+    &:hover {
+               border: 1px solid rgba(31, 32, 65, 0.5);
+     } 
+  }
 }

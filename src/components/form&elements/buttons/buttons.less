@@ -4,17 +4,60 @@
         url('../buttons/Montserrat-Regular-Kirill.woff') format('woff'),
         url('../buttons/Montserrat-Regular-Kirill.ttf') format('truetype');
 }
+
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../buttons/MaterialIcons-Regular.svg') format('svg'),
+        url('../buttons/MaterialIcons-Regular.woff') format('woff'),
+        url('../buttons/MaterialIcons-Regular.ttf') format('truetype');
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
 .buttons {
     width: 218px;
     height: 195px;
     z-index: 0;
+
     .button {
         margin-top: 5px;
     }
+
     .button-border {
-        margin-top: 55px;
+        margin-top: 25px;
+    }
+
+    .button-pay {
+        margin-top: 25px;
     }
 }
+
 .button {
     position: relative;
 
@@ -63,7 +106,7 @@
         background: #ffffff;
         color: #BC9CFF;
         border-radius: 22px;
-        padding: 13px 19px;
+        padding: 13px 18.5px;
     }
 
     .btn-white:after {
@@ -92,4 +135,50 @@
             opacity: 0.5;
         }
     }
+}
+
+.button-pay {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    width: 320px;
+    height: 44px;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    border-radius: 22px;
+    cursor: pointer;
+
+    &:hover {
+        background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%);
+    }
+
+    .btn {
+        width: 280px;
+        height: 15px;
+        margin-left: 37px;
+        font-family: 'Montserrat-Regular-Kirill';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+
+    .material-icons {
+        width: 44px;
+        height: 44px;
+
+        font-family: Material Icons;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
 }
