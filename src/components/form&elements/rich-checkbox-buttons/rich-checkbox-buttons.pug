@@ -1,17 +1,14 @@
 mixin checkbox-input(name, value, title, text)
-    div.checkbox-input-container
-        div.container-for-input
-            input(type="checkbox", class="checkbox-input", id=name, name=name, value=value)&attributes(attributes)
-            label(class="text-checkbox", for=name)
-        div.container-for-label
-            label(class="text-checkbox", for=name)= title
-            p(class="text-rus")= text
+    input(type="checkbox", class="rich-checkbox-buttons__input", id=name, name=name, value=value)&attributes(attributes)
+    label(class="rich-checkbox-buttons__label text" for=name)= title
+    p(class="rich-checkbox-buttons__text")= text
 
 
-div(class="rich-checkbox-buttons")
-    div(class="rich-checkbox-buttons-title")
-        div(class="title-sm-rus") Rich Checkbox Buttons
-    div(class="rich-checkbox-buttons-inputs")
-        +checkbox-input("wide-corridor", "wide-corridor", "Широкий коридор", "Ширина коридоров в номере не менее 91 см.")
-        +checkbox-input("help-invalids", "help-invalids", "Помощник для инвалидов", "На 1 этаже вас встретит специалист и проводит до номера.")
+
+form(class="rich-checkbox-buttons" action="#" enctype="text/plain" method="post" name="rich-checkbox-buttons")
+  fieldset(class="rich-checkbox-buttons__container")
+    legend(class="rich-checkbox-buttons__title title-sm") Rich Checkbox Buttons
+    +checkbox-input("wide-corridor", "wide-corridor", "Широкий коридор", "Ширина коридоров в номере не менее 91 см.")
+    +checkbox-input("help-invalids", "help-invalids", "Помощник для инвалидов", "На 1 этаже вас встретит специалист и проводит до номера.")
+
 

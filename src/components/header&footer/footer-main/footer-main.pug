@@ -28,11 +28,9 @@ div(class="footer-main")
         div(class="footer-subscribe")
             +footer-nav-title('Subscribe to our newsletter')
             p(class="text") Receive our latest news and promotions in your inbox!
-            div(class="email-subscription")
-                div(class="email-subscription-form")
-                    input(class="text-rus" type="email", id="email-subscription-input", placeholder="Your email address")
-                    div(class="email-btn")
-                        i(class="material-icons") arrow_forward
+            form(class="email-subscribe" action="#" enctype="text/plain" method="post" name="email-subscribe")
+                input(class="email-subscribe__input text-rus" type="email" id="email-subscribe__input" placeholder="Your email adress")
+                input(class="email-subscribe__button" type="submit" form="email-subscribe" value="arrow_forward")
     div(class="footer-tight")
         p(class="text") Copyright © 2018 Toxin UI Kit. All rights reserved.
         div(class="network")

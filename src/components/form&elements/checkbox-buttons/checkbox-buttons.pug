@@ -1,16 +1,12 @@
 mixin checkbox-input(name, value, title)
-    div.checkbox-input-container
-        div.container-for-input
-            input(type="checkbox", class="checkbox-input", id=name, name=name, value=value)&attributes(attributes)
-            label(class="text-rus", for=name)
-        div.container-for-label
-            label(class="text-rus", for=name)= title
+    input(type="checkbox", class="checkbox-buttons__input", id=name, name=name, value=value)&attributes(attributes)
+    label(class="checkbox-buttons__label text" for=name)= title
 
 
-div(class="checkbox-buttons")
-    div(class="checkbox-buttons-title")
-        div(class="title-sm-rus") Checkbox Buttons
-    div(class="checkbox-buttons-inputs")
-        +checkbox-input("smoking", "smoking", "Можно курить")
-        +checkbox-input("animals", "animals", "Можно с питомцами")(checked)
-        +checkbox-input("guests", "guests", "Можно пригласить гостей (до 10 человек)")(checked)
+
+form(class="checkbox-buttons" action="#" enctype="text/plain" method="post" name="checkbox-buttons")
+  fieldset(class="checkbox-buttons__container")
+    legend(class="checkbox-buttons__title title-sm") Checkbox Buttons
+    +checkbox-input("smoking", "smoking", "Можно курить")
+    +checkbox-input("animals", "animals", "Можно с питомцами")(checked)
+    +checkbox-input("guests", "guests", "Можно пригласить гостей (до 10 человек)")(checked)
