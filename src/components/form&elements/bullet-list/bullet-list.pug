@@ -1,12 +1,6 @@
-mixin bullet-list-one(title)
-    div(class="bullet-list-container")
-        div(class="bullet-circle")
-        div(class="bullet-text")= title
-
 div(class="bullet-list")
-    div(class="bullet-list-title")
-        div(class="title-sm-rus") bullet list
-    div(class="bullet-list-box")
-        +bullet-list-one("Нельзя с питомцами")
-        +bullet-list-one("Без вечеринок и мероприятий")
-        +bullet-list-one("Время прибытия — после 13:00, а выезд до 12:00")
+  h6(class="bullet-list__title title-sm") bullet list
+  ul(class="bullet-list__list")
+    li(class="bullet-list__item") Нельзя с питомцами
+    li(class="bullet-list__item") Без вечеринок и мероприятий
+    li(class="bullet-list__item") Время прибытия — после 13:00, а выезд до 12:00
