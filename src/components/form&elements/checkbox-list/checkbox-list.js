@@ -1,8 +1,7 @@
 $(document).ready(function () {
-    $(".checkbox-list-btn").click(function () {
-        $(".checkbox-list-btn i").toggleClass("checkbox-list-btn-open");
-        $(".checkbox-list-inputs").toggleClass("checkbox-list-inputs-opened");
-        // $(".checkbox-list-inputs").slideToggle(500);
+    $(".checkbox-list__btn").click(function () {
+        $(".checkbox-list__btn i").toggleClass("checkbox-list__btn--opened");
+        $(".checkbox-list__form").toggleClass("checkbox-list__form--opened");
     });
 
 });

@@ -1,12 +1,15 @@
-mixin info-room-one(name, title, text)
-    div.icon-text-list
-        div(class=name)
-        div.text-equipment
-            p(class="text-rus-equipment")= title
-            p(class="text-rus")= text
+mixin info-room__table(title, text)
+  table(class="info-room__table")
+      tr(class="info-room__row")
+        td(class="info-room__data--img" rowspan="2")
+        td(class="info-room__data--text text--bold")= title
+      tr(class="info-room__row")
+        td(class="info-room__data--text text--normal")= text
+  hr(class="info-room__line")
 
 
 div(class="info-room")
-    +info-room-one("insert_emoticon", "Комфорт", "Шумопоглощающие стены")
-    +info-room-one("location_city", "Удобство", "Окно в каждой из спален")
-    +info-room-one("whatshot", "Уют", "Номер оснащён камином")
+  table(class="info-room__table")
+  +info-room__table("Комфорт","Шумопоглащающие окна")
+  +info-room__table("Удобство","Окно в каждой из спален")
+  +info-room__table("Уют","Номер оснащён камином")
