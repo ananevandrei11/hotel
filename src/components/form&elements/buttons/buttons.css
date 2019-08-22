@@ -1,0 +1,115 @@
+@font-face {
+  font-family: 'Montserrat-Regular-Kirill';
+  src: url('../buttons/Montserrat-Regular-Kirill.svg') format('svg'), url('../buttons/Montserrat-Regular-Kirill.woff') format('woff'), url('../buttons/Montserrat-Regular-Kirill.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../buttons/MaterialIcons-Regular.svg') format('svg'), url('../buttons/MaterialIcons-Regular.woff') format('woff'), url('../buttons/MaterialIcons-Regular.ttf') format('truetype');
+}
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+.buttons {
+  width: 218px;
+  height: 195px;
+  z-index: 0;
+}
+.buttons .btn--purple {
+  margin-top: 5px;
+}
+.buttons .btn--border {
+  margin-top: 25px;
+}
+.buttons .btn--pay {
+  margin-top: 25px;
+}
+.btn {
+  position: relative;
+  display: block;
+  border-radius: 22px;
+  width: auto;
+  height: auto;
+  font-family: 'Montserrat-Regular-Kirill';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 0;
+  cursor: pointer;
+}
+.btn--purple {
+  padding: 14.5px 20px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  color: #ffffff;
+}
+.btn--purple:hover {
+  background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%);
+}
+.btn--border {
+  background: #ffffff;
+  color: #BC9CFF;
+  border-radius: 22px;
+  padding: 13px 18px;
+}
+.btn--border:after {
+  content: "me";
+  font-family: 'Montserrat-Regular-Kirill';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: -3px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 24px;
+  background: #bc9cff;
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  padding: 14px 42px;
+  top: -1.5px;
+  left: -1.5px;
+  position: absolute;
+  z-index: -1;
+}
+.btn--border:hover:after {
+  opacity: 0.5;
+}
+.btn--pay {
+  display: flex;
+  align-items: center;
+  width: 320px;
+  height: 44px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-radius: 22px;
+  color: #ffffff;
+  padding-left: 94px;
+  padding-top: 0px;
+}
+.btn--pay:hover {
+  background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%);
+}
+.btn--pay .material-icons {
+  padding-left: 63.5px;
+}

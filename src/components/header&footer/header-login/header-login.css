@@ -28,19 +28,8 @@ HEADER-LOGIN
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
   margin-top: 150px;
 }
-.header-login .btn-white {
-  margin: 18px 20px 18px 0px;
-  padding: 7px 18px 8px 18px;
-}
-.header-login .btn-purple {
-  margin: 16.5px 140px 19px 0px;
-  padding: 10px 20px 10px 20px;
-}
 .header-login .header-nav {
   margin: 23px 16px 26px 297.5px;
-}
-.header-login .header-nav .nav__list {
-  display: flex;
 }
 .header-login .header-logo {
   margin-left: 133px;
@@ -50,26 +39,25 @@ HEADER-LOGIN
 HEADER-NAVIGATION
 ------------ */
 .nav {
-  display: flex;
   width: 540px;
   height: 21px;
 }
-.nav__list {
+.nav-list {
   display: flex;
   margin: 0;
   padding: 0;
   list-style: none;
 }
-.nav__item {
+.nav-item {
   margin-left: 29px;
 }
-.nav__item:first-child {
+.nav-item:first-child {
   margin: 0;
 }
-.nav__item:last-child {
+.nav-item:last-child {
   margin-left: 27px;
 }
-.nav__link {
+.nav-link {
   text-decoration: none;
   font-family: "Montserrat-Regular";
   font-style: normal;
@@ -78,21 +66,48 @@ HEADER-NAVIGATION
   line-height: 17px;
   color: rgba(31, 32, 65, 0.5);
 }
-.nav__link svg {
+.nav-link svg {
   align-items: center;
   text-align: center;
+}
+.nav-item:nth-child(4) {
   margin-left: 3.75px;
 }
-.nav__item:nth-child(4) {
+.nav-item:nth-child(4) #nav-checkbox {
+  display: none;
+}
+.nav-item:nth-child(4) #nav-checkbox:checked ~ .clear-menu {
+  display: block;
+  position: absolute;
+}
+.nav-item:nth-child(5) {
   margin-left: 25px;
 }
-.nav__item:first-child .nav__link {
+.nav-item:first-child .nav-link {
   font-weight: bold;
   color: rgba(31, 32, 65, 0.75);
+}
+.nav .clear-menu {
+  display: none;
 }
 /*-------------
 HEADER-BUTTON
 ------------ */
-.button {
+.header-buttons {
   display: flex;
+  z-index: 0;
+  margin-top: 18px;
+}
+.header-buttons .btn--border {
+  padding: 8.5px 18.5px 8px 18.5px;
+}
+.header-buttons .btn--border:after {
+  content: "login";
+  padding: 9.5px 20px 9.5px 19px;
+  top: -5px;
+  left: -1px;
+}
+.header-buttons .btn--purple {
+  margin-left: 20px;
+  padding: 5px 20px 5px 19px !important;
 }
