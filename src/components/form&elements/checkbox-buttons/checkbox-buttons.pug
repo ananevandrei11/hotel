@@ -4,7 +4,7 @@ mixin checkbox-input(name, value, title)
 
 
 
-form(class="checkbox-buttons" action="#" enctype="text/plain" method="post" name="checkbox-buttons")
+form(class="checkbox-buttons" action="#" method="post" name="checkbox-buttons")
   fieldset(class="checkbox-buttons__container")
     legend(class="checkbox-buttons__title title-sm") Checkbox Buttons
     +checkbox-input("smoking", "smoking", "Можно курить")

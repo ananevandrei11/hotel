@@ -1,10 +1,5 @@
-mixin radio-input(name, value, title)
-    div.container-for-input
-        input(type="radio", class="radio-input", id=value, name=name, value=value)&attributes(attributes)
-        label(class="text-rus", for=value)
-    div.container-for-label
-        label(class="text-rus", for=value)= title
-
-div(class="radio-buttons")
-    +radio-input("gender", "man", "Мужчина")(checked)
-    +radio-input("gender", "woman", "Женщина")
+form(class="radio-buttons" name="gender" action="#" method="post")
+  input(type="radio" class="radio-buttons__input" name="typeOfGender" id="man" value="man" checked)
+  label(class="radio-buttons__label text" for="man")
+  input(type="radio" class="radio-buttons__input" name="typeOfGender" id="woman" value="woman")
+  label(class="radio-buttons__label text" for="woman")
