@@ -10,3 +10,5 @@ import './components/form&elements/like-button/like-button.js';
 import './components/form&elements/rate-button/rate-button.js';
 import './components/form&elements/comments/comments.js';
 import './components/form&elements/range-slider/range-slider.js';
+import './components/form&elements/filter-date/datepicker.min.js';
+import './components/form&elements/filter-date/filter-date.js';

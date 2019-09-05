@@ -1,0 +1,124 @@
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url('../pagination/Montserrat-Regular.svg') format('svg'),
+      url('../pagination/Montserrat-Regular.woff') format('woff'),
+      url('../pagination/Montserrat-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../pagination/MaterialIcons-Regular.svg') format('svg'),
+      url('../pagination/MaterialIcons-Regular.woff') format('woff'),
+      url('../pagination/MaterialIcons-Regular.ttf') format('truetype');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+
+.pagination {
+  position: relative;
+  width: 241px;
+  height: 106px;
+
+  &__pages {
+    display: flex;
+    width: 241px;
+
+    a {
+      cursor: pointer;
+
+      &:nth-child(4) {
+        cursor: auto;
+      }
+    }
+
+    .page {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      font-family: 'Montserrat-Regular';
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 15px;
+      color: rgba(31, 32, 65, 0.5);
+    }
+
+    .first-page {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+      border-radius: 22px;
+      font-family: 'Montserrat-Regular';
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 15px;
+      color: #FFFFFF;
+    }
+
+    .last-page {
+      width: 40px;
+      height: 40px;
+      background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+      border-radius: 22px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .material-icons {
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        color: #FFFFFF;
+      }
+    }
+  }
+
+  &__title {
+    width: 229px;
+    height: 24px;
+    margin-top: 8px;
+    margin-left: 5px;
+    font-family: 'Montserrat-Regular';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75);
+  }
+
+
+
+}
