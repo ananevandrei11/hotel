@@ -1,89 +1,90 @@
 @font-face {
-    font-family: 'Montserrat-Regular';
-    src: url('../rich-checkbox-buttons/Montserrat-Regular.svg') format('svg'),
-        url('../rich-checkbox-buttons/Montserrat-Regular.woff') format('woff'),
-        url('../rich-checkbox-buttons/Montserrat-Regular.ttf') format('truetype');
+  font-family: 'Montserrat-Regular';
+  src: url('../rich-checkbox-buttons/Montserrat-Regular.svg') format('svg'),
+      url('../rich-checkbox-buttons/Montserrat-Regular.woff') format('woff'),
+      url('../rich-checkbox-buttons/Montserrat-Regular.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: 'Material Icons';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../rich-checkbox-buttons/MaterialIcons-Regular.svg') format('svg'),
-        url('../rich-checkbox-buttons/MaterialIcons-Regular.woff') format('woff'),
-        url('../rich-checkbox-buttons/MaterialIcons-Regular.ttf') format('truetype');
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../rich-checkbox-buttons/MaterialIcons-Regular.svg') format('svg'),
+      url('../rich-checkbox-buttons/MaterialIcons-Regular.woff') format('woff'),
+      url('../rich-checkbox-buttons/MaterialIcons-Regular.ttf') format('truetype');
 }
 .rich-checkbox-buttons {
-    width: 266px;
-    height: 145px;
-    &__container {
-      position: relative;
-      margin: 0;
-      padding: 0;
-      border:0;
-    }
-    &__title {
-      margin-bottom: 17px;
-    }
-    
-    &__input {
-      display: none;
-    }
-    
-    &__label {
-      display: block;
-      width: 203px;
-      margin-left: 32px;
-      font-family: 'Montserrat-Regular';
-      font-style: normal;
-      font-weight: bold;
-      font-size: 14px;
-      line-height: 18px;
-      color: rgba(31, 32, 65, 0.75);
-      cursor: pointer;
-      
-    }
-    &__label:before {
-      content: "check";
-      position: absolute;
-      width: 20px;
-      height: 20px;
-      left: 2px;
-      // top:31px;
-      background: #FFFFFF;
-      border: 1px solid rgba(31, 32, 65, 0.25);
-      box-sizing: border-box;
-      border-radius: 4px;
-      font-family: 'Material Icons';
-      font-style: normal;
-      font-weight: normal;
-      font-size: 14px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: transparent;
-      cursor: pointer;
-    }
-    
-    &__input:checked+&__label:before {
-      background: -webkit-linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      border-color:#BC9CFF;
-    }
-    &__text {
-      width: 200px;
-      margin-top: 6px;
-      margin-left: 32px;
-      margin-bottom: 10px;
-      font-family: 'Montserrat-Regular';
-      font-style: normal;
-      font-weight: normal;
-      font-size: 12px;
-      line-height: 14px;
-      color: rgba(31, 32, 65, 0.5);
-      &:last-child {
-        width: 230px;
-      }
-    }  
+  width: 266px;
+  height: 145px;
+  &__container {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    border:0;
   }
+  &__title {
+    .title-sm();
+    margin-bottom: 17px;
+    letter-spacing: 0.17pt;
+  }
+  
+  &__input {
+    display: none;
+  }
+  
+  &__label {
+    .text();
+    display: block;
+    width: 203px;
+    margin-left: 32px;
+    font-weight: bold;
+    line-height: 18px;
+    letter-spacing: 0.22pt;
+    cursor: pointer;
+    
+  }
+  &__label:before {
+    content: "check";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 2px;
+    // top:31px;
+    background: #FFFFFF;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    letter-spacing: 0pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: transparent;
+    cursor: pointer;
+  }
+  
+  &__input:checked+&__label:before {
+    background: -webkit-linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-color:#BC9CFF;
+  }
+  &__text {
+    width: 200px;
+    margin-top: 6px;
+    margin-left: 32px;
+    margin-bottom: 10px;
+    font-family: 'Montserrat-Regular';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: rgba(31, 32, 65, 0.5);
+    &:last-child {
+      width: 230px;
+    }
+  }  
+}

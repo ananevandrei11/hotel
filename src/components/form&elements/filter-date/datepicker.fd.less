@@ -13,6 +13,7 @@
     url('../filter-date/MaterialIcons-Regular.woff') format('woff'),
     url('../filter-date/MaterialIcons-Regular.ttf') format('truetype');
 }
+
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
@@ -20,10 +21,72 @@
   src: url('../filter-date/OpenSans-Regular.woff') format('woff'),
     url('../filter-date/OpenSans-Regular.ttf') format('ttf');
 }
+
+.filter-date {
+  position: relative;
+  width: 266px;
+  height: 64px;
+  
+  &__label {
+      display: block;
+      margin-bottom: 5px;
+      font-family: 'Montserrat-Regular';
+      font-style: normal;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 15px;
+      letter-spacing: 0.15pt;
+      text-transform: uppercase;
+      color: #1F2041;
+  }
+
+  &__input {
+      width: 266px;
+      height: 44px;
+      padding-left: 14px;
+      background: #FFFFFF;
+      border: 1px solid rgba(31, 32, 65, 0.25);
+      box-sizing: border-box;
+      border-radius: 4px;
+      font-family: 'Montserrat-Regular';
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 24px;
+      text-transform: lowercase;
+      color: rgba(31, 32, 65, 0.75);
+  }
+
+  &__button {
+      position: absolute;
+      width: 44px;
+      height: 44px;
+      left: 222px;
+      font-family: "Material Icons";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 24px;
+      align-items: center;
+      justify-content: center;
+      color: rgba(31, 32, 65, 0.5);
+      background-color: #fff;
+      border-top: 1px solid rgba(31, 32, 65, 0.25);
+      border-bottom: 1px solid rgba(31, 32, 65, 0.25);
+      border-right: 1px solid rgba(31, 32, 65, 0.25);
+      border-left-width: 0px;
+      border-radius: 0px 4px 4px 0px;
+      cursor: pointer;
+  }
+
+  
+}
+
 /* -------------------------------------------------
     Datepicker cells
    ------------------------------------------------- */
-.datepicker--cells {
+
+   .datepicker--cells {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -75,6 +138,7 @@
 
 .datepicker--cell.-current-.-focus- {
   color: #fff;
+  border-radius: 22px;
 }
 
 .datepicker--cell.-current-.-in-range- {
@@ -116,6 +180,8 @@
   background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
   position: relative;
   z-index: 1;
+  border-radius: 22px;
+
   &:after {
     content: " ";
     position: absolute;
@@ -128,6 +194,7 @@
     left: 20px;
   }
 }
+
 .datepicker--cell-month.-range-from-,
 .datepicker--cell-year.-range-from- {
   &:after {
@@ -136,10 +203,13 @@
     opacity: 0;
   }
 }
+
 .datepicker--cell.-range-to- {
   background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
   position: relative;
   z-index: 1;
+  border-radius: 22px;
+
   &:before {
     content: " ";
     position: absolute;
@@ -152,6 +222,7 @@
     left: 0px;
   }
 }
+
 .datepicker--cell-month.-range-to-,
 .datepicker--cell-year.-range-to- {
   &:before {
@@ -160,6 +231,7 @@
     opacity: 0;
   }
 }
+
 .datepicker--cell.-range-from-.-range-to- {
   border-radius: 22px;
 }
@@ -271,18 +343,18 @@
 .-disabled-.-focus-.datepicker--cell-day.-other-month-,
 .-disabled-.-focus-.datepicker--cell-year.-other-decade- {
   color: #dedede;
-  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%)  !important;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%) !important;
 }
 
 .-selected-.datepicker--cell-day.-other-month-,
 .-selected-.datepicker--cell-year.-other-decade- {
   color: #fff !important;
-  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%)  !important;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%) !important;
 }
 
 .-selected-.-focus-.datepicker--cell-day.-other-month-,
 .-selected-.-focus-.datepicker--cell-year.-other-decade- {
-  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%)  !important;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%) !important;
 }
 
 .-in-range-.datepicker--cell-day.-other-month-,
@@ -293,7 +365,7 @@
 
 .-in-range-.-focus-.datepicker--cell-day.-other-month-,
 .-in-range-.-focus-.datepicker--cell-year.-other-decade- {
-  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%)  !important;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%) !important;
 }
 
 .datepicker--cell-day.-other-month-:empty,
@@ -525,7 +597,7 @@
   width: 280px;
   height: 24px;
   margin-left: 12.5px;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .-only-timepicker- .datepicker--nav {
@@ -577,15 +649,15 @@
 }
 
 .datepicker--nav-action i {
-font-family: 'Material Icons';
-font-style: normal;
-font-weight: normal;
-font-size: 24px;
-line-height: 20px;
-display: flex;
-align-items: center;
-text-align: center;
-color: #BC9CFF !important;
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #BC9CFF !important;
 }
 
 .datepicker--nav-title {
@@ -609,17 +681,18 @@ color: #BC9CFF !important;
 }
 
 .datepicker--buttons {
+  width: 280px;
+  height: 15px;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 4px;
-  border-top: 1px solid #efefef;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 20px 10px 20px;
 }
 
 .datepicker--button {
-  color: #4EB5E6;
   cursor: pointer;
-  border-radius: 4px;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -632,13 +705,30 @@ color: #BC9CFF !important;
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  height: 32px;
+  width: auto;
+  height: 15px;
+  border: 0;
+  background-color: #fff;
+  color: rgba(31, 32, 65, 0.5);
+  font-family: "Montserrat-Regular";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  margin-top: 0px;
+  margin-left: 0px;
+  &:nth-of-type(2){
+    color: #BC9CFF;
+    margin-left: 120px;
+  }
 }
 
-.datepicker--button:hover {
-  color: #4a4a4a;
-  background: #f0f0f0;
-}
+
+// .datepicker--button:hover {
+//   color: #4a4a4a;
+//   background: #f0f0f0;
+// }
 
 .datepicker--cell-day.-other-month-,
 .datepicker--cell-year.-other-decade- {

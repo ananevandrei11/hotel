@@ -1,13 +1,13 @@
 mixin checkbox-input(name, value, title, text)
     input(type="checkbox", class="rich-checkbox-buttons__input", id=name, name=name, value=value)&attributes(attributes)
-    label(class="rich-checkbox-buttons__label text" for=name)= title
+    label(class="rich-checkbox-buttons__label" for=name)= title
     p(class="rich-checkbox-buttons__text")= text
 
 
 
 form(class="rich-checkbox-buttons" action="#" method="post" name="rich-checkbox-buttons")
   fieldset(class="rich-checkbox-buttons__container")
-    legend(class="rich-checkbox-buttons__title title-sm") Rich Checkbox Buttons
+    legend(class="rich-checkbox-buttons__title") Rich Checkbox Buttons
     +checkbox-input("wide-corridor", "wide-corridor", "Широкий коридор", "Ширина коридоров в номере не менее 91 см.")
     +checkbox-input("help-invalids", "help-invalids", "Помощник для инвалидов", "На 1 этаже вас встретит специалист и проводит до номера.")
 

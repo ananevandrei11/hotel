@@ -1,6 +1,7 @@
 div(class="toggle-container")
-    div(class="container-for-input")
-        input(type="checkbox", class="checkbox-input", id="offers", name="offers", value="get-offers" checked)
-        label(class="text", for="offers")
-    div(class="container-for-label")
-        label(class="text", for="offers") Получать спецпредложения
+    form(class="toggle-container__form" name="get-offers" action="#" method="post")
+        div(class="container-for-input")
+            input(type="checkbox", class="container-for-input__input", id="offers", name="offers", value="offers" checked)
+            label(class="container-for-input__label", for="offers")
+        div(class="container-for-label")
+        label(class="container-for-label__label", for="offers") Получать спецпредложения

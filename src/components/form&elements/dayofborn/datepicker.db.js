@@ -9,7 +9,6 @@
             '<i class="datepicker--pointer"></i>' +
             '<nav class="datepicker--nav"></nav>' +
             '<div class="datepicker--content"></div>' +
-            '<div class="datepicker--buttons"></div>' +
             '</div>',
         defaults = {
             classes: '',
@@ -46,8 +45,9 @@
             multipleDatesSeparator: ',',
             range: false,
 
-            todayButton: true,
+            todayButton: false,
             clearButton: true,
+            applyButton: true,
 
             showEvent: 'focus',
             autoClose: false,
@@ -600,6 +600,11 @@
             }
         },
 
+        apply: function () {
+            this.hide();
+        },
+        
+       
         /**
          * Updates datepicker options
          * @param {String|Object} param - parameter's name to update. If object then it will extend current options
@@ -1481,6 +1486,7 @@
             monthsShort: ['Янв', 'Фев', 'Мар', 'Апр', 'Май', 'Июн', 'Июл', 'Авг', 'Сен', 'Окт', 'Ноя', 'Дек'],
             today: 'Сегодня',
             clear: 'Очистить',
+            apply: 'Применить',
             dateFormat: 'dd.mm.yyyy',
             timeFormat: 'hh:ii',
             firstDay: 1
@@ -1845,10 +1851,13 @@
 
         _addButtonsIfNeed: function () {
             if (this.opts.todayButton) {
-                this._addButton('go')
+                this._addButton('today')
             }
             if (this.opts.clearButton) {
                 this._addButton('clear')
+            }
+            if (this.opts.applyButton) {
+                this._addButton('apply')
             }
         },
 
@@ -2234,4 +2243,5 @@
         }
     };
 })();
+   
  })(window, jQuery);

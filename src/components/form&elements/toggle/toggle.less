@@ -12,16 +12,16 @@
     height: 20px;
 
     .container-for-input {
-        .checkbox-input {
+        &__input {
             display: none;
         }
 
-        label {
+        &__label {
             position: relative;
             cursor: pointer;
         }
 
-        label::before {
+        &__label::before {
             content: " ";
             display: inline-block;
             position: absolute;
@@ -33,7 +33,7 @@
             border-radius: 10px;
         }
 
-        label::after {
+        &__label::after {
             content: " ";
             display: inline-block;
             position: relative;
@@ -48,11 +48,11 @@
             z-index: 1;
         }
 
-        .checkbox-input:checked+label:before {
+        .container-for-input__input:checked+.container-for-input__label:before {
             border: 1px solid #BC9CFF;
         }
 
-        .checkbox-input:checked+label:after {
+        .container-for-input__input:checked+.container-for-input__label:after {
             background: rgb(188, 156, 255);
             background: linear-gradient(180deg, rgba(188, 156, 255, 1) 0%, rgba(139, 164, 249, 1) 100%);
             left: 24px;
@@ -60,11 +60,11 @@
     }
 
     .container-for-label {
-        .text-rus {
+        &__label {
+            .text();
             display: flex;
-            padding-top: 2px;
-            color: rgba(31, 32, 65, 0.5);
             line-height: 18px;
+            margin-left: 50px;
             cursor: pointer;
         }
     }
