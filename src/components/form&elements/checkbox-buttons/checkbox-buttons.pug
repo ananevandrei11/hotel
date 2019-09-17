@@ -1,12 +1,12 @@
 mixin checkbox-input(name, value, title)
     input(type="checkbox", class="checkbox-buttons__input", id=name, name=name, value=value)&attributes(attributes)
-    label(class="checkbox-buttons__label text" for=name)= title
+    label(class="checkbox-buttons__label" for=name)= title
 
 
 
 form(class="checkbox-buttons" action="#" method="post" name="checkbox-buttons")
   fieldset(class="checkbox-buttons__container")
-    legend(class="checkbox-buttons__title title-sm") Checkbox Buttons
+    legend(class="checkbox-buttons__title") Checkbox Buttons
     +checkbox-input("smoking", "smoking", "Можно курить")
     +checkbox-input("animals", "animals", "Можно с питомцами")(checked)
     +checkbox-input("guests", "guests", "Можно пригласить гостей (до 10 человек)")(checked)

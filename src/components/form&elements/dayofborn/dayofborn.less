@@ -1,0 +1,62 @@
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url('../dayofborn/Montserrat-Regular.svg') format('svg'),
+    url('../dayofborn/Montserrat-Regular.woff') format('woff'),
+    url('../dayofborn/Montserrat-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../dayofborn/MaterialIcons-Regular.svg') format('svg'),
+    url('../dayofborn/MaterialIcons-Regular.woff') format('woff'),
+    url('../dayofborn/MaterialIcons-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../dayofborn/OpenSans-Regular.woff') format('woff'),
+    url('../dayofborn/OpenSans-Regular.ttf') format('ttf');
+}
+
+.dayofborn {
+  position: relative;
+  width: 320px;
+  height: 67px;
+  
+  &__label {
+      display: block;
+      margin-bottom: 5px;
+      font-family: 'Montserrat-Regular';
+      font-style: normal;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 15px;
+      letter-spacing: 0.15pt;
+      text-transform: uppercase;
+      color: #1F2041;
+  }
+
+  &__input {
+      width: 320px;
+      height: 44px;
+      padding-left: 14px;
+      background: #FFFFFF;
+      border: 1px solid rgba(31, 32, 65, 0.25);
+      box-sizing: border-box;
+      border-radius: 4px;
+      font-family: 'Montserrat-Regular';
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 24px;
+      text-transform: uppercase;
+      color: rgba(31, 32, 65, 0.75);
+      &::placeholder {
+        color: rgba(31, 32, 65, 0.25);
+      }
+  }
+}

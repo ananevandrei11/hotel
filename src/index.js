@@ -2,6 +2,7 @@ import './style.less';
 import 'jquery';
 import _ from 'lodash';
 import './jquery-ui.min.js';
+import './datepicker.js';
 import './components/form&elements/dropdown-guest/dropdown-guest.js';
 import './components/form&elements/dropdown-bed/dropdown-bed.js';
 import './components/form&elements/checkbox-list/checkbox-list.js';
@@ -10,6 +11,6 @@ import './components/form&elements/like-button/like-button.js';
 import './components/form&elements/rate-button/rate-button.js';
 import './components/form&elements/comments/comments.js';
 import './components/form&elements/range-slider/range-slider.js';
-import './components/form&elements/filter-date/datepicker.fd.js';
 import './components/form&elements/filter-date/filter-date.js';
-import './components/form&elements/dayofborn/datepicker.db.js';
+import './components/form&elements/date-dropdown/date-dropdown.js';
+

@@ -1,12 +1,12 @@
 mixin checkbox-input(name, value, title)
     input(type="checkbox", class="checkbox-list__input", id=name, name=name, value=value)&attributes(attributes)
-    label(class="checkbox-list__label text" for=name)= title
+    label(class="checkbox-list__label" for=name)= title
   
 
 
 div(class="checkbox-list")
   div(class="checkbox-list__container")
-    h6(class="checkbox-list__title title-sm") expandable checkbox list
+    h6(class="checkbox-list__title") expandable checkbox list
     p(class="checkbox-list__btn")
       i(class="material-icons") expand_more
   form(class="checkbox-list__form" action="#" method="post" name="checkbox-list__form")

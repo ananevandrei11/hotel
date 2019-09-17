@@ -11,6 +11,15 @@
         url('../color&type/Montserrat-Regular.woff') format('woff'),
         url('../color&type/Montserrat-Regular.ttf') format('truetype');
 }
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../color&type/OpenSans-Regular.woff') format('woff'),
+      url('../color&type/OpenSans-Regular.ttf') format('ttf');
+  }
+
+
 .conteiner {
     margin-top: 25px;
 }
@@ -180,7 +189,7 @@
 }
 
 .title-lg {
-    font-family: "Quicksand-Bold";
+    font-family: "Quicksand-Bold", 'Open Sans';
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
@@ -190,9 +199,16 @@
     text-transform: none;
     margin-top: 0px;
 }
-
+.title-lg() {
+    font-family: "Quicksand-Bold", 'Open Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    color: #1F2041;
+    text-transform: none;
+}
 .title-md {
-    font-family: "Quicksand-Bold";
+    font-family: "Quicksand-Bold", 'Open Sans';
     font-style: normal;
     font-weight: bold;
     font-size: 19px;
@@ -201,7 +217,14 @@
     text-align: left;
     text-transform: none;
 }
-
+.title-md() {
+    font-family: "Quicksand-Bold", 'Open Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    color: #1F2041;
+    text-transform: none;
+}
 .title-sm {
     font-family: "Montserrat-Regular";
     font-style: normal;
@@ -219,7 +242,6 @@
     font-size: 12px;
     text-transform: uppercase;
     color: #1F2041;
-    letter-spacing: 0.15pt;
 }
 .text {
     font-family: "Montserrat-Regular";
