@@ -1,0 +1,57 @@
+@font-face {
+    font-family: "Quicksand-Bold";
+    /* Гарнитура шрифта */
+    src: url(../rooms-found/Quicksand-Bold.ttf) format('truetype');
+    /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('../rooms-found/Montserrat-Regular.svg') format('svg'),
+        url('../rooms-found/Montserrat-Regular.woff') format('woff'),
+        url('../rooms-found/Montserrat-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../rooms-found/OpenSans-Regular.woff') format('woff'),
+        url('../rooms-found/OpenSans-Regular.ttf') format('ttf');
+}
+
+.rooms-found {
+    width: 380px;
+    height: 374px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+
+    &__title {
+        .title-lg();
+        width: 320px;
+        height: 60px;
+        margin-top: 40px;
+        margin-left: 30px;
+        margin-bottom: 0;
+        font-family: 'Open Sans';
+        line-height: 30px;
+    }
+
+    .date-dropdown {
+        margin-top: 15px;
+        margin-left: 30px;
+    }
+
+    .dropdown-guest {
+        margin-top: 23px;
+        margin-left: 30px;
+    }
+
+    .btn {
+        margin-top: 31px;
+        margin-left: 30px;
+    }
+}

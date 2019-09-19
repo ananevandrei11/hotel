@@ -1,6 +1,10 @@
-div(class="cards")
-    div(class="room-found")
-        include ../form&elements/date-dropdown/date-dropdown.pug
-        include ../form&elements/dropdown-guest/dropdown-guest.pug
-        button(class="btn btn--pay") перейти к оплате
-            i(class="material-icons") arrow_forward
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Document
+    body
+        div.cards
+            include rooms-found/rooms-found.pug

@@ -6,7 +6,8 @@ const webpack = require('webpack');
 const path = require('path');
 const config = {
   entry: {
-    app: './src/index.js'
+    app: './src/index.js',
+    cards: './src/components/cards/cards.js'
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -17,7 +18,12 @@ const config = {
   },
   plugins: [
     new HtmlWebpackPlugin({
+      filename: 'index.html',
       template: "./src/index.pug"
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'cards.html',
+      template: './src/components/cards/cards.pug'
     }),
     new MiniCssExtractPlugin({
      filename: 'style.css'

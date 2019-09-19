@@ -1,6 +1,6 @@
 $(function () {
   var firstDatepicker = $('#date-start').datepicker({
-      autoClose: true,
+      autoClose: false,
       minDate: new Date(),
       onSelect: function(formattedDate, date, inst) {
         // update secondDatepicker option, based on currently selected date
@@ -13,7 +13,7 @@ $(function () {
     }).data('datepicker');
     
     var secondDatepicker = $('#date-end').datepicker({
-      autoClose: true,
+      autoClose: false,
       minDate: new Date()
     }).data('datepicker');
     
