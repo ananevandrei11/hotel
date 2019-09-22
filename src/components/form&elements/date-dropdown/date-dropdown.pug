@@ -1,7 +1,8 @@
 div(class="date-dropdown")
     form(class="date-dropdown__form" action="#" method="post" name="form-date-start")
         label(class="date-dropdown__label") прибытие
-        input(type="text" id="date-start" class="date-dropdown__input" placeholder="дд.мм.гггг" disabled)
+        input(class="date-dropdown__input datepicker-here" type="text" id="date-start" placeholder="дд.мм.гггг"
+                    disabled="disabled" data-range="true" data-multiple-dates-separator=" - ")
         input(type="button" class="date-dropdown__button material-icons" value="expand_more" id="btn-start")
 
 

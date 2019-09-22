@@ -1,0 +1,80 @@
+@font-face {
+  font-family: "Quicksand-Bold";
+  /* Гарнитура шрифта */
+  src: url(../selected-room/Quicksand-Bold.ttf) format('truetype');
+  /* Путь к файлу со шрифтом */
+}
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url('../selected-room/Montserrat-Regular.svg') format('svg'), url('../selected-room/Montserrat-Regular.woff') format('woff'), url('../selected-room/Montserrat-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../selected-room/OpenSans-Regular.woff') format('woff'), url('../selected-room/OpenSans-Regular.ttf') format('ttf');
+}
+.selected-room {
+  width: 380px;
+  height: 511px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+.selected-room__title {
+  display: flex;
+  justify-content: space-between;
+  width: 320px;
+  height: 30px;
+  margin: 30px 30px 20px 30px;
+}
+.selected-room__title--number b:nth-of-type(1) {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  color: #1F2041;
+  padding-left: -2px;
+}
+.selected-room__title--number b:nth-of-type(2) {
+  font-family: "Quicksand-Bold", 'Open Sans';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 17px;
+  color: #1F2041;
+  padding-left: 5.5px;
+}
+.selected-room__title--number b:nth-of-type(3) {
+  font-family: 'Montserrat-Regular';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #BC9CFF;
+  padding-left: 8px;
+}
+.selected-room__title--cost {
+  font-family: 'Montserrat-Regular';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
+  padding-top: 5px;
+}
+.selected-room__title--cost b:nth-of-type(2) {
+  font-weight: normal;
+}
+.selected-room .date-dropdown {
+  margin-top: 25px;
+  margin-left: 30px;
+}
+.selected-room__costDays {
+  margin-top: 20px;
+  margin-left: 30px;
+}

@@ -1,6 +1,8 @@
 @import "./rooms-found/rooms-found.less";
+@import "./selected-room/selected-room.less";
 
 .cards {
+    display: flex;
     position: relative;
     width: 1440px;
     height: 1350px;
@@ -9,8 +11,13 @@
     margin: 0;
     padding: 0;
     .rooms-found {
-        position: absolute;
+
         margin-top: 150px;
         margin-left: 140px;
+    }
+    .selected-room {
+
+        margin-top: 150px;
+        margin-left: 40px;
     }
 }
