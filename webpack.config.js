@@ -2,6 +2,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 const webpack = require('webpack');
 const path = require('path');
 const config = {
@@ -29,6 +30,7 @@ const config = {
      filename: 'style.css'
     }),
     new CleanWebpackPlugin (),
+    
     new webpack.ProvidePlugin({
       $: "jquery",
       jQuery: "jquery",
@@ -47,6 +49,7 @@ const config = {
     rules: [{
         test: /\.pug$/,
         use: ["pug-loader"]
+        
       },
       {
         test: /\.less$/,
@@ -80,17 +83,17 @@ const config = {
               outputPath: './images',
               useRelativePath: true
             },
-          }
-      //     {
-      //       loader: 'image-webpack-loader',
-      //       options: {
-      //         mozjpeg: {
-      //           progressive: true,
-      //           quality: 70
-      //         }
-      //       },
+          },
+          {
+            loader: 'image-webpack-loader',
+            options: {
+              mozjpeg: {
+                progressive: true,
+                quality: 70
+              }
+            },
           
-      // }
+      }
         ],
       },
       {
