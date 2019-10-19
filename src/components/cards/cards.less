@@ -1,8 +1,11 @@
 @import "./rooms-found/rooms-found.less";
 @import "./selected-room/selected-room.less";
 @import "./register-card/register-card.less";
+@import "./logindata/logindata.less";
+@import "./room-card/room-card.less";
 .cards {
     display: flex;
+    flex-wrap: wrap;
     position: relative;
     width: 1440px;
     height: 1350px;
@@ -20,6 +23,14 @@
     }
     .register-card {
         margin-top: 150px;
+        margin-left: 40px;
+    }
+    .logindata {
+        margin-top: 0px;
+        margin-left: 140px;
+    }
+    .room-card {
+        margin-top: 0px;
         margin-left: 40px;
     }
 }
