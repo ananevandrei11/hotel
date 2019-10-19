@@ -38,6 +38,7 @@
   font-feature-settings: 'liga';
 }
 .room-card {
+  position: relative;
   width: 270px;
   height: 257px;
   background: #FFFFFF;
@@ -47,7 +48,102 @@
 .room-card__images {
   width: 270px;
   height: 151px;
-  border: 0.1px solid red;
+  border-radius: 4px;
+}
+.room-card__images .images--prev {
+  position: absolute;
+  top: 63px;
+  left: 0;
+  cursor: pointer;
+}
+.room-card__images .images--prev .material-icons {
+  width: 44px;
+  height: 44px;
+  font-family: Material Icons;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+  transform: rotate(90deg);
+}
+.room-card__images .images--next {
+  position: absolute;
+  top: 43px;
+  right: 0;
+  cursor: pointer;
+}
+.room-card__images .images--next .material-icons {
+  width: 44px;
+  height: 44px;
+  font-family: Material Icons;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+  transform: rotate(-90deg);
+}
+.room-card__images .images--count {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 41.25px;
+  height: 7.5px;
+  top: 114px;
+  left: 214px;
+}
+.room-card__images .images--count .count-rect {
+  width: 5px;
+  height: 5px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0px 5px 5px rgba(31, 32, 65, 0.3);
+}
+.room-card__images .images--count .count-rect--one {
+  background-color: #ffffff;
+}
+.room-card__images .image-one {
+  display: block;
+  width: 270px;
+  height: 151px;
+  border-radius: 4px 4px 0px 0px;
+  background-image: url(../room-card/room-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.room-card__images .image-two {
+  display: none;
+  width: 270px;
+  height: 151px;
+  border-radius: 4px 4px 0px 0px;
+  background-image: url(../room-card/room-2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.room-card__images .image-three {
+  display: none;
+  width: 270px;
+  height: 151px;
+  border-radius: 4px 4px 0px 0px;
+  background-image: url(../room-card/room-3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.room-card__images .image-four {
+  display: none;
+  width: 270px;
+  height: 151px;
+  border-radius: 4px 4px 0px 0px;
+  background-image: url(../room-card/room-4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .room-card__title {
   display: flex;
@@ -55,14 +151,14 @@
   align-items: center;
   width: 234px;
   height: 24px;
-  margin-top: 10px;
+  margin-top: 22px;
   margin-left: 20px;
 }
 .room-card__title--number b:nth-of-type(1) {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 14px;
   color: #1F2041;
   padding-left: -2px;
 }
@@ -70,9 +166,10 @@
   font-family: "Quicksand-Bold", 'Open Sans';
   font-style: normal;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 19px;
+  line-height: 17px;
   color: #1F2041;
-  margin-left: 6px;
+  margin-left: 8px;
 }
 .room-card__title--number b:nth-of-type(3) {
   font-family: 'Montserrat-Regular';
@@ -90,7 +187,6 @@
   font-size: 14px;
   letter-spacing: -0.5pt;
   color: rgba(31, 32, 65, 0.5);
-  padding-top: 5px;
 }
 .room-card__title--cost b:nth-of-type(2) {
   font-weight: normal;
@@ -98,14 +194,20 @@
 .room-card__border {
   width: 230px;
   height: 1px;
-  margin-top: 10px;
+  margin-top: 9px;
   margin-left: 20px;
   background: rgba(31, 32, 65, 0.1);
 }
 .room-card__footer {
   display: flex;
-  width: 234px;
   justify-content: space-between;
-  margin-top: 8px;
+  align-items: center;
+  width: 234px;
+  height: 24px;
+  margin-top: 10px;
   margin-left: 20px;
+}
+.room-card__footer b:nth-of-type(2) {
+  font-weight: 100;
+  align-items: baseline;
 }

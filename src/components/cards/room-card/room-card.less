@@ -19,6 +19,7 @@
     src: url('../room-card/OpenSans-Regular.woff') format('woff'),
         url('../room-card/OpenSans-Regular.ttf') format('ttf');
 }
+
 @font-face {
     font-family: 'Material Icons';
     font-style: normal;
@@ -46,23 +47,133 @@
 }
 
 .room-card {
+    position: relative;
     width: 270px;
     height: 257px;
     background: #FFFFFF;
     box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
     border-radius: 4px;
+
     &__images {
         width: 270px;
         height: 151px;
-        border: 0.1px solid red;
+        border-radius: 4px;
+
+        .images--prev {
+            position: absolute;
+            top: 63px;
+            left: 0;
+            cursor: pointer;
+
+            .material-icons {
+                width: 44px;
+                height: 44px;
+                font-family: Material Icons;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 24px;
+                line-height: 24px;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                color: #FFFFFF;
+                transform: rotate(90deg)
+            }
+        }
+
+        .images--next {
+            position: absolute;
+            top: 43px;
+            right: 0;
+            cursor: pointer;
+
+            .material-icons {
+                width: 44px;
+                height: 44px;
+                font-family: Material Icons;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 24px;
+                line-height: 24px;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                color: #FFFFFF;
+                transform: rotate(-90deg);
+            }
+        }
+
+        .images--count {
+            position: absolute;
+            display: flex;
+            justify-content: space-between;
+            width: 41.25px;
+            height: 7.50px;
+            top: 114px;
+            left: 214px;
+
+            .count-rect {
+                width: 5px;
+                height: 5px;
+                border: 1px solid #ffffff;
+                border-radius: 50%;
+                box-shadow: 0px 5px 5px rgba(31, 32, 65, 0.3);
+            }
+
+            .count-rect--one {
+                background-color: #ffffff;
+            }
+        }
+
+
+        .image-one {
+            display: block;
+            width: 270px;
+            height: 151px;
+            border-radius: 4px 4px 0px 0px;
+            background-image: url(../room-card/room-1.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .image-two {
+            display: none;
+            width: 270px;
+            height: 151px;
+            border-radius: 4px 4px 0px 0px;
+            background-image: url(../room-card/room-2.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .image-three {
+            display: none;
+            width: 270px;
+            height: 151px;
+            border-radius: 4px 4px 0px 0px;
+            background-image: url(../room-card/room-3.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .image-four {
+            display: none;
+            width: 270px;
+            height: 151px;
+            border-radius: 4px 4px 0px 0px;
+            background-image: url(../room-card/room-4.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
     }
+
     &__title {
         display: flex;
         justify-content: space-between;
         align-items: center;
         width: 234px;
         height: 24px;
-        margin-top: 10px;
+        margin-top: 22px;
         margin-left: 20px;
 
         &--number {
@@ -70,7 +181,7 @@
                 font-family: "Open Sans";
                 font-style: normal;
                 font-weight: bold;
-                font-size: 12px;
+                font-size: 14px;
                 color: #1F2041;
                 padding-left: -2px;
             }
@@ -79,9 +190,10 @@
                 font-family: "Quicksand-Bold", 'Open Sans';
                 font-style: normal;
                 font-weight: bold;
-                font-size: 14px;
+                font-size: 19px;
+                line-height: 17px;
                 color: #1F2041;
-                margin-left: 6px;
+                margin-left: 8px;
             }
 
             b:nth-of-type(3) {
@@ -102,7 +214,6 @@
             font-size: 14px;
             letter-spacing: -0.5pt;
             color: rgba(31, 32, 65, 0.5);
-            padding-top: 5px;
 
             b:nth-of-type(2) {
                 font-weight: normal;
@@ -113,16 +224,23 @@
     &__border {
         width: 230px;
         height: 1px;
-        margin-top: 10px;
+        margin-top: 9px;
         margin-left: 20px;
         background: rgba(31, 32, 65, 0.1);
     }
 
     &__footer {
         display: flex;
-        width: 234px;
         justify-content: space-between;
-        margin-top: 8px;
+        align-items: center;
+        width: 234px;
+        height: 24px;
+        margin-top: 10px;
         margin-left: 20px;
+
+        b:nth-of-type(2) {
+            font-weight: 100;
+            align-items: baseline;
+        }
     }
 }

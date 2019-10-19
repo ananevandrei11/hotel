@@ -3,6 +3,7 @@ import 'jquery';
 import _ from 'lodash';
 import './jquery-ui.min.js';
 import './datepicker.js';
+import './jquery.jcarousel.min.js'
 import './components/form&elements/dropdown-guest/dropdown-guest.js';
 import './components/form&elements/dropdown-bed/dropdown-bed.js';
 import './components/form&elements/checkbox-list/checkbox-list.js';

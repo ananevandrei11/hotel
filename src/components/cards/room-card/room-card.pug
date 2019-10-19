@@ -1,5 +1,20 @@
 div(class="room-card")
     div(class="room-card__images")
+        div(class="images--prev")
+          i(class="material-icons") expand_more
+        div(class="images--next")
+          i(class="material-icons") expand_more
+        div(class="images--count")
+            p(class="count-rect count-rect--one")
+            p(class="count-rect count-rect--two")
+            p(class="count-rect count-rect--three")
+            p(class="count-rect count-rect--four")
+        div(class="images--carousel")
+            div.image-one 
+            div.image-two 
+            div.image-three 
+            div.image-four
+
 
     div(class="room-card__title")
         p(class="room-card__title--number")
@@ -15,5 +30,5 @@ div(class="room-card")
     div(class="room-card__footer")
         include ../../form&elements/rate-button/rate-button.pug
         p(class="room-card__footer--review")
-            b 65
-            b отзывов
+            b 145
+            b &nbsp;Отзывов
