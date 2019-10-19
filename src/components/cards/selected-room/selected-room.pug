@@ -5,7 +5,7 @@ div(class="selected-room")
             b 888
             b люкс
         p(class="selected-room__title--cost")
-            b(class="dayCost") 9 900₽
+            b(class="dayCost") 9 990₽
             b  в сутки
     
     include ../../form&elements/date-dropdown/date-dropdown.pug
@@ -13,7 +13,7 @@ div(class="selected-room")
 
     div(class="selected-room__costDays")
         div(class="costDays--title")
-            b 9 900₽ x 
+            b 9 990₽ x 
             b(id="totalRoomDays") 0
             b  суток
         div(class="costDays--result")
@@ -22,26 +22,30 @@ div(class="selected-room")
 
     div(class="selected-room__costService")
         div(class="costService--title")
-            b Сбор за услуги: скидка&#160;
-            b(id="discountCost") 2179
-            b ₽ 
-            b
-                i(class="material-icons") error_outline
+            div
+                b Сбор за услуги: скидка&#160;
+                b(id="discountCost") 2179
+                b ₽
+            div
+                b
+                    i(class="material-icons") error_outline
         div(class="costService--result")
             b(id="costService") 0
             b ₽
 
     div(class="selected-room__costAddService")
         div(class="costAddService--title")
-            b Сбор за дополнительные услуги 
-            b
-                i(class="material-icons") error_outline
+            div
+                b Сбор за дополнительные услуги 
+            div
+                b
+                    i(class="material-icons") error_outline
         div(class="costAddService--result")
             b(id="costAddService") 300
             b ₽
     div(class="selected-room__costTotal")
         div Итого
-        div &#160;.......................................&#160;
+        div &#160;..................................&#160;
         div(id="totalCost") 0
         div ₽
     button(class="btn btn--pay") забронировать

@@ -1,0 +1,110 @@
+@font-face {
+  font-family: "Quicksand-Bold";
+  /* Гарнитура шрифта */
+  src: url(../register-card/Quicksand-Bold.ttf) format('truetype');
+  /* Путь к файлу со шрифтом */
+}
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url('../register-card/Montserrat-Regular.svg') format('svg'), url('../register-card/Montserrat-Regular.woff') format('woff'), url('../register-card/Montserrat-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../register-card/OpenSans-Regular.woff') format('woff'), url('../register-card/OpenSans-Regular.ttf') format('ttf');
+}
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../register-card/MaterialIcons-Regular.woff') format('woff'), url('../register-card/MaterialIcons-Regular.ttf') format('truetype');
+}
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'liga';
+}
+.register-card {
+  width: 380px;
+  height: 646px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  z-index: 0;
+}
+.register-card__title {
+  width: 320px;
+  height: 30px;
+  margin-top: 40px;
+  margin-left: 30px;
+  font-family: "Quicksand-Bold", 'Open Sans';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: #1F2041;
+}
+.register-card__form--name {
+  width: 320px;
+  height: 98px;
+  margin-top: -12px;
+  margin-left: 30px;
+}
+.register-card__form--name .lastname__input {
+  margin-top: 10px;
+}
+.register-card__form--logindata {
+  width: 320px;
+  height: 118px;
+  margin-top: 17px;
+  margin-left: 30px;
+}
+.register-card__form--logindata .password__input {
+  margin-top: 10px;
+}
+.register-card .radio-buttons {
+  margin-top: 10px;
+  margin-left: 30px;
+}
+.register-card .dayofborn {
+  margin-top: 20px;
+  margin-left: 30px;
+}
+.register-card .toggle-container {
+  margin-top: 10px;
+  margin-left: 30px;
+}
+.register-card .btn--pay {
+  margin-top: 22px;
+  margin-left: 30px;
+}
+.register-card__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 320px;
+  height: 44px;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+.register-card__footer--btn .btn--border {
+  padding: 14px 26px;
+}
+.register-card__footer--btn .btn--border:after {
+  padding: 15px 44px;
+}

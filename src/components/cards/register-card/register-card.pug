@@ -1,0 +1,28 @@
+div(class="register-card")
+    h4(class="register-card__title") Регистрация аккаунта
+
+    form(class="register-card__form--name" action="#" method="post" name="name")
+        div(class="firstname__input text")
+            input(class="email-form__input text" type="text" id="firstname__input" name="firstname__input" placeholder="Имя")
+        div(class="lastname__input text")
+            input(class="email-form__input text" type="text" id="lastname__input" name="lastname__input" placeholder="Фамилия")
+
+    include ../../form&elements/radio-buttons/radio-buttons.pug
+    include ../../form&elements/dayofborn/dayofborn.pug
+
+    form(class="register-card__form--logindata" action="#" method="post" name="logindata")
+        label(class="email-form__label title-sm" for="email-form__input") данные для входа в сервис
+        div(class="email__input text")
+            input(class="email-form__input text" type="email" id="email-form__input" name="email-form__input" placeholder="Email")
+        div(class="password__input text")
+            input(class="email-form__input text" type="password" id="password__input" name="password__input" placeholder="Пароль")
+
+    include ../../form&elements/toggle/toggle.pug
+
+    button(class="btn btn--pay") перейти к оплате
+            i(class="material-icons") arrow_forward
+
+    div(class="register-card__footer")
+        div(class="register-card__footer--title") Уже есть аккаунт на Toxin
+        div(class="register-card__footer--btn")
+            button(class="btn btn--border") войти
