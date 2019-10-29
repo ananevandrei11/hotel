@@ -1,49 +1,50 @@
 $(document).ready(function () {
-
-    $('.images--next').click(function () {
-        var currentImageIndex = $(".image.visible").index();
-        var currentImage = $('.image.visible');
-        var nextImageIndex = currentImageIndex + 1;
-        var nextImage = $('.image').eq(nextImageIndex);
-        // currentImage.fadeOut(100);
-        currentImage.removeClass('visible');
-        if (nextImageIndex == ($('.image:last').index() + 1)) {
-            // $('.image').eq(0).fadeIn(100);
-            $('.image').eq(0).addClass('visible');
-        }
-        else {
-            // nextImage.fadeIn(100);
-            nextImage.addClass('visible');
-        }
-
-        var currentCountIndex = $(".count-rect.solidcolor").index();
-        var currentCount = $('.count-rect.solidcolor');
-        var nextCountIndex = currentCountIndex + 1;
-        var nextCount = $('.count-rect').eq(nextCountIndex);
-        currentCount.removeClass('solidcolor');
-        if (nextCountIndex == ($('.count-rect:last').index() + 1)) {
-            $('.count-rect').eq(0).addClass('solidcolor');
-        }
-        else {
-            nextCount.addClass('solidcolor');
-        }
-    });
     
-    $('.images--prev').click(function () {
-        var currentImage = $('.image.visible');
-        var currentImageIndex = $('.image.visible').index();
+    $(".cards").on("click", ".room-card", function (event) {
+        var currentImageIndex = $(".image.visible", this).index();
+        var currentImage = $('.image.visible', this);
+        var nextImageIndex = currentImageIndex + 1;
+        var nextImage = $('.image', this).eq(nextImageIndex);
         var prevImageIndex = currentImageIndex - 1;
-        var prevImage = $('.image').eq(prevImageIndex);
-        // currentImage.fadeOut(100);
-        currentImage.removeClass('visible');
-        // prevImage.fadeIn(100);
-        prevImage.addClass('visible');
+        var prevImage = $('.image', this).eq(prevImageIndex);
+        var currentCountIndex = $(".count-rect.solidcolor", this).index();
+        var currentCount = $('.count-rect.solidcolor', this);
+        var nextCountIndex = currentCountIndex + 1;
+        var nextCount = $('.count-rect', this).eq(nextCountIndex);
+        var prevCountIndex = currentCountIndex - 1;
+        var prevCount = $('.count-rect', this).eq(prevCountIndex);
+        var imageLast = $('.image:last', this);
+        var imageEq = $('.image', this);
+        var countLast = $('.count-rect:last', this);
+        var countEq = $('.count-rect', this);
 
-        var currentCount = $('.count-rect.solidcolor');
-            var currentCountIndex = $('.count-rect.solidcolor').index();
-            var prevCountIndex = currentCountIndex - 1;
-            var prevCount = $('.count-rect').eq(prevCountIndex);
+        $(".images--next", this).click(function () {
+            currentImage.removeClass('visible');
+
+            if (nextImageIndex == (imageLast.index() + 1)) {
+                imageEq.eq(0).addClass('visible');
+            } else {
+                nextImage.addClass('visible');
+            }
+            currentCount.removeClass('solidcolor');
+            if (nextCountIndex == (countLast.index() + 1)) {
+                countEq.eq(0).addClass('solidcolor');
+            } else {
+                nextCount.addClass('solidcolor');
+            }
+        });
+
+        $('.images--prev', this).click(function () {
+            currentImage.removeClass('visible');
+            prevImage.addClass('visible');
             currentCount.removeClass('solidcolor');
             prevCount.addClass('solidcolor');
+
+            if (prevImage.addClass('visible')) {
+                nextImage.removeClass('visible');
+                currentImage.removeClass('visible');
+            }
+        });
+
     });
 });
