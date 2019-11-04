@@ -3,7 +3,16 @@ $(document).ready(function () {
     $(".dropdown-title-guest").toggleClass("opened-guest");
     $(".dropdown-list-guest").slideToggle(500);
   });
+  // $( "body" ).on( "mouseenter", ".dropdown-guest", function(e) {
+  //   var dropdownTitleGuest = $(".dropdown-title-guest", this);
+  //   var dropdownListGuest = $(".dropdown-list-guest", this);
+  //     $(".dropdown-btn-guest", this).click(function () {
+  //         dropdownTitleGuest.toggleClass("opened-guest");
+  //         dropdownListGuest.slideToggle("slow");
+  //     });
+  //   });
 
+  
   $(".adults-minus").click(function () {
     if ($("#adults").attr('value') == "0") {
       $("#adults").attr('value', '0');

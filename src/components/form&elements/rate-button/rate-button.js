@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
   /*STAR ONE*/
 $("#label_rating_1").click(function () {
       if ($("#label_rating_1").hasClass("star-border")) {
