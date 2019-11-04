@@ -36,7 +36,7 @@ GENERAL HEADER
 .logo {
   width: 105.69px;
   height: 40px;
-  background-image: url(../header-entry/Logo.png);
+  background-image: url(../header-entry/logo.png);
 }
 .header-entry {
   display: flex;

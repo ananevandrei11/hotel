@@ -50,7 +50,7 @@ HEADER-LOGIN
 .logo {
   width: 105.69px;
   height: 40px;
-  background-image: url(../header-login/Logo.png);
+  background-image: url(../header-login/logo.png);
 }
 .header-login {
   display: flex;
