@@ -15,4 +15,3 @@ import './components/form&elements/range-slider/range-slider.js';
 import './components/form&elements/filter-date/filter-date.js';
 import './components/form&elements/date-dropdown/date-dropdown.js';
 import './components/cards/cards.js';
-import './landing-page/main.js';
