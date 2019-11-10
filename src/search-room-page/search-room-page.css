@@ -1,0 +1,144 @@
+.search-room-page {
+  position: relative;
+  width: 1440px;
+  height: auto;
+}
+.search-room-page .header {
+  margin-top: 0;
+  border-bottom: 1px solid rgba(31, 32, 65, 0.05);
+}
+.search-room-page .header .header-logo {
+  margin-left: 140px;
+  cursor: pointer;
+}
+.search-room-page .header .header-nav {
+  margin: 23px 20px 26px 285px;
+}
+.search-room-page .header .nav {
+  width: 446px;
+  height: 21px;
+}
+.search-room-page .header .nav-item {
+  margin-left: 20px;
+}
+.search-room-page .header .nav-item:first-child,
+.search-room-page .header .nav-item:last-child,
+.search-room-page .header .nav-item:nth-of-type(3) {
+  margin-left: 0;
+}
+.search-room-page .header .nav-link {
+  text-decoration: none;
+  font-family: "Montserrat-Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(31, 32, 65, 0.5);
+}
+.search-room-page .header .nav #nav-checkbox--one,
+.search-room-page .header .nav #nav-checkbox--two {
+  display: none;
+}
+.search-room-page .header .nav .material-icons {
+  margin-top: 1px;
+  margin-left: 1px;
+  color: rgba(31, 32, 65, 0.5);
+  cursor: pointer;
+}
+.search-room-page .header .btn--border {
+  width: 87px;
+}
+.search-room-page .header .btn--border:after {
+  content: "войти";
+  padding: 9.5px 29px;
+}
+.search-room-page .header .btn--purple {
+  width: 196px;
+}
+.search-room-page__body {
+  width: 1440px;
+  height: 1355px;
+  display: flex;
+  flex-wrap: wrap;
+  background: #FFFFFF;
+  border-bottom: 1px solid rgba(31, 32, 65, 0.05);
+}
+.search-room-page__body .body__aside {
+  width: 266px;
+  height: auto;
+  margin-left: 140px;
+  margin-top: 30px;
+}
+.search-room-page__body .body__aside .range-slider__subtext {
+  margin-top: 6px;
+  font-size: 12px;
+  color: rgba(31, 32, 65, 0.5);
+}
+.search-room-page__body .body__aside .dropdown-guest {
+  margin-top: 20px;
+}
+.search-room-page__body .body__aside .dropdown-guest .dropdown-title-guest {
+  width: 266px;
+}
+.search-room-page__body .body__aside .dropdown-guest .dropdown-list-guest {
+  width: 266px;
+}
+.search-room-page__body .body__aside .dropdown-guest .dropdown-counter {
+  margin-left: 65px;
+}
+.search-room-page__body .body__aside .dropdown-guest #apply {
+  margin-left: 85px;
+}
+.search-room-page__body .body__aside .range-slider {
+  margin-top: 30px;
+}
+.search-room-page__body .body__aside .checkbox-buttons {
+  margin-top: 24px;
+}
+.search-room-page__body .body__aside .rich-checkbox-buttons {
+  margin-top: 31px;
+}
+.search-room-page__body .body__aside .dropdown-bed {
+  margin-top: 30px;
+}
+.search-room-page__body .body__aside .checkbox-list {
+  margin-top: 16px;
+}
+.search-room-page__body .body__article {
+  width: 834px;
+  height: auto;
+  margin-top: 30px;
+  margin-bottom: 70px;
+  margin-left: 60px;
+}
+.search-room-page__body .body__article--title {
+  width: 513px;
+  height: 30px;
+  margin-bottom: 21px;
+}
+.search-room-page__body .body__article--main {
+  width: 834px;
+  height: auto;
+}
+.search-room-page .footer-main {
+  margin-top: 0;
+}
+.search-room-page .footer-main .footer-box {
+  margin-left: 140px;
+}
+.search-room-page .footer-main .footer-support {
+  width: 149px;
+}
+.search-room-page .footer-main .footer-subscribe {
+  margin-left: 51px;
+}
+.search-room-page .footer-main .footer-subscribe .text {
+  width: 260px;
+}
+.search-room-page .footer-tight .text {
+  width: 367px;
+  margin-left: 140px;
+}
+.search-room-page .footer-tight .network {
+  margin-left: 681px;
+}

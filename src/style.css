@@ -4533,7 +4533,7 @@ HEADER-LOGIN
 .logo {
   width: 105.69px;
   height: 40px;
-  background-image: url(../header-login/Logo.png);
+  background-image: url(../header-login/logo.png);
 }
 .header-login {
   display: flex;
@@ -4665,7 +4665,7 @@ GENERAL HEADER
 .logo {
   width: 105.69px;
   height: 40px;
-  background-image: url(../header-entry/Logo.png);
+  background-image: url(../header-entry/logo.png);
 }
 .header-entry {
   display: flex;
@@ -4723,7 +4723,7 @@ GENERAL HEADER
 .footer-main .footer-wide .footer-box .footer-logo {
   width: 105.69px;
   height: 40px;
-  background-image: url(../footer-main/Logo.png);
+  background-image: url(../footer-main/logo.png);
   margin-top: 0px;
   margin-left: 0px;
 }
@@ -4846,7 +4846,7 @@ GENERAL HEADER
 .footer-end .footer-end-logo {
   width: 105.69px;
   height: 40px;
-  background-image: url(../footer-end/Logo.png);
+  background-image: url(../footer-end/logo.png);
   margin-left: 660px;
   margin-top: 100px;
 }
@@ -5602,6 +5602,7 @@ GENERAL HEADER
 }
 .main-page .header .header-logo {
   margin-left: 140px;
+  cursor: pointer;
 }
 .main-page .header .header-nav {
   margin: 23px 20px 26px 285px;
@@ -5699,5 +5700,83 @@ GENERAL HEADER
   margin-left: 140px;
 }
 .main-page .footer-tight .network {
+  margin-left: 681px;
+}
+.search-room-page {
+  position: relative;
+  width: 1440px;
+  height: auto;
+}
+.search-room-page .header {
+  margin-top: 0;
+}
+.search-room-page .header .header-logo {
+  margin-left: 140px;
+  cursor: pointer;
+}
+.search-room-page .header .header-nav {
+  margin: 23px 20px 26px 285px;
+}
+.search-room-page .header .nav {
+  width: 446px;
+  height: 21px;
+}
+.search-room-page .header .nav-item {
+  margin-left: 20px;
+}
+.search-room-page .header .nav-item:first-child,
+.search-room-page .header .nav-item:last-child,
+.search-room-page .header .nav-item:nth-of-type(3) {
+  margin-left: 0;
+}
+.search-room-page .header .nav-link {
+  text-decoration: none;
+  font-family: "Montserrat-Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(31, 32, 65, 0.5);
+}
+.search-room-page .header .nav #nav-checkbox--one,
+.search-room-page .header .nav #nav-checkbox--two {
+  display: none;
+}
+.search-room-page .header .nav .material-icons {
+  margin-top: 1px;
+  margin-left: 1px;
+  color: rgba(31, 32, 65, 0.5);
+  cursor: pointer;
+}
+.search-room-page .header .btn--border {
+  width: 87px;
+}
+.search-room-page .header .btn--border:after {
+  content: "войти";
+  padding: 9.5px 29px;
+}
+.search-room-page .header .btn--purple {
+  width: 196px;
+}
+.search-room-page .footer-main {
+  margin-top: 0;
+}
+.search-room-page .footer-main .footer-box {
+  margin-left: 140px;
+}
+.search-room-page .footer-main .footer-support {
+  width: 149px;
+}
+.search-room-page .footer-main .footer-subscribe {
+  margin-left: 51px;
+}
+.search-room-page .footer-main .footer-subscribe .text {
+  width: 260px;
+}
+.search-room-page .footer-tight .text {
+  width: 367px;
+  margin-left: 140px;
+}
+.search-room-page .footer-tight .network {
   margin-left: 681px;
 }

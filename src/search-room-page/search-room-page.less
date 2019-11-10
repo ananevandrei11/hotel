@@ -1,9 +1,10 @@
-.main-page {
+.search-room-page {
     position: relative;
     width: 1440px;
     height: auto;
     .header {
         margin-top: 0;
+        border-bottom: 1px solid rgba(31, 32, 65, 0.05);
         .header-logo {
             margin-left: 140px;
             cursor: pointer;
@@ -51,37 +52,69 @@
         }
     }
     &__body {
-        height: 830px;
-        background-image: url("main-background.png");
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-        overflow: hidden;
-        .rooms-found {
-            margin-top: 70px;
-            margin-left: 140px;
-        }
-        .note--text {
-            width: 297px;
-            height: 48px;
-            margin-top: 317px;
-            margin-left: 1009px;
-            text-align: right;
-            color: rgba(31, 32, 65, 0.75);
-        }
-        .register-card {
-            display: none;
-            margin-top: 30px;
-        }
-        .logindata {
-            display: none;
-        }
-    }
-    &__body--entry {
+        width: 1440px;
+        height: 1355px;
         display: flex;
-        justify-content: space-around;
-        align-items: center;
-        background-image: url("main-background__entry.png");
-
+        flex-wrap: wrap;
+        background: #FFFFFF;
+        border-bottom: 1px solid rgba(31, 32, 65, 0.05);
+        .body__aside {
+            width: 266px;
+            height: auto;
+            margin-left: 140px;
+            margin-top: 30px;
+            .range-slider__subtext {
+                margin-top: 6px;
+                font-size: 12px;
+                color: rgba(31, 32, 65, 0.5);
+            }
+            .dropdown-guest {
+                margin-top: 20px;
+                .dropdown-title-guest {
+                    width: 266px;
+                }
+                .dropdown-list-guest {
+                    width: 266px;
+                }
+                .dropdown-counter {
+                    margin-left: 65px;
+                }
+                #apply {
+                    margin-left: 85px;
+                }
+            }
+            .range-slider {
+                margin-top: 30px;
+            }
+            .checkbox-buttons {
+                margin-top: 24px;
+            }
+            .rich-checkbox-buttons {
+                margin-top: 31px;
+            }
+            .dropdown-bed {
+                margin-top: 30px;
+            }
+            .checkbox-list {
+                margin-top: 16px;
+            }
+        }
+        .body__article {
+            width: 834px;
+            height: auto;
+            margin-top: 30px;
+            margin-bottom: 70px;
+            margin-left: 60px;
+            &--title {
+                width: 513px;
+                height: 30px;
+                margin-bottom: 21px;
+            }
+            &--main {
+                width: 834px;
+                height: auto;
+            }
+        }
     }
     .footer-main {
         margin-top: 0;

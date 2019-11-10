@@ -8,6 +8,7 @@
 }
 .main-page .header .header-logo {
   margin-left: 140px;
+  cursor: pointer;
 }
 .main-page .header .header-nav {
   margin: 23px 20px 26px 285px;

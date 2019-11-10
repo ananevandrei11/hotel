@@ -25,6 +25,10 @@ const config = {
       filename: 'index.html',
       template: './src/index.pug'
     }),
+    new HtmlWebpackPlugin({
+      filename: 'search-room-page.html',
+      template: './src/search-room-page/search-room-page.pug'
+    }),
     new MiniCssExtractPlugin({
      filename: 'style.css'
     }),
