@@ -117,8 +117,63 @@
   margin-bottom: 21px;
 }
 .search-room-page__body .body__article--main {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   width: 834px;
   height: auto;
+}
+.search-room-page__body .body__article--main .room-card:nth-of-type(n+4) {
+  margin-top: 21px;
+}
+.search-room-page__body .body__article--main .room-card__title--number b:nth-of-type(2) {
+  cursor: pointer;
+}
+.search-room-page__body .body__article--main #room-2 .image-one {
+  background-image: url(../search-room-page/room-2.png);
+}
+.search-room-page__body .body__article--main #room-3 .image-one {
+  background-image: url(../search-room-page/room-3.png);
+}
+.search-room-page__body .body__article--main #room-4 .image-one {
+  background-image: url(../search-room-page/room-4.png);
+}
+.search-room-page__body .body__article--main #room-5 .image-one {
+  background-image: url(../search-room-page/room-5.png);
+}
+.search-room-page__body .body__article--main #room-6 .image-one {
+  background-image: url(../search-room-page/room-6.png);
+}
+.search-room-page__body .body__article--main #room-7 .image-one {
+  background-image: url(../search-room-page/room-7.png);
+}
+.search-room-page__body .body__article--main #room-8 .image-one {
+  background-image: url(../search-room-page/room-8.png);
+}
+.search-room-page__body .body__article--main #room-9 .image-one {
+  background-image: url(../search-room-page/room-9.png);
+}
+.search-room-page__body .body__article--main #room-10 .image-one {
+  background-image: url(../search-room-page/room-10.png);
+}
+.search-room-page__body .body__article--main #room-11 .image-one {
+  background-image: url(../search-room-page/room-11.png);
+}
+.search-room-page__body .body__article--main #room-12 .image-one {
+  background-image: url(../search-room-page/room-12.png);
+}
+.search-room-page__body .body__article--pagination {
+  display: flex;
+  justify-content: space-around;
+  width: auto;
+  height: 75px;
+  margin-top: 40.5px;
+}
+.search-room-page .main-page__body {
+  display: none;
+  justify-content: space-around;
+  align-items: center;
 }
 .search-room-page .footer-main {
   margin-top: 0;

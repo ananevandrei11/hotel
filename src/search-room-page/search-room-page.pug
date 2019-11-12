@@ -51,6 +51,59 @@ html(lang="en")
                 article.body__article
                     h1(class="body__article--title title-lg") Номера, которые мы для вас подобрали
                     section(class="body__article--main")
+                        mixin room(id, name, category, cost, reviews)
+                            div(class="room-card" id=id)
+                                div(class="room-card__images")
+                                    div(class="images--prev")
+                                        i(class="material-icons") expand_more
+                                    div(class="images--next")
+                                        i(class="material-icons") expand_more
+                                    div(class="images--count")
+                                        p(class="count-rect solidcolor")
+                                        p(class="count-rect")
+                                        p(class="count-rect")
+                                        p(class="count-rect")
+                                    div(class="images--carousel")
+                                        div(class="image image-one visible")
+                                        div(class="image image-two") 
+                                        div(class="image image-three")
+                                        div(class="image image-four")
+                                
+                                div(class="room-card__title")
+                                    p(class="room-card__title--number")
+                                        b №
+                                        b(onclick="window.location.replace('room-details.html')")= name
+                                        b= category
+                                    p(class="room-card__title--cost")
+                                        b(class="dayCost")= cost
+                                        b  в сутки
+
+                                div(class="room-card__border")
+                                div(class="room-card__footer")
+                                    include ../components/form&elements/rate-button/rate-button.pug
+                                    p(class="room-card__footer--review")
+                                        b= reviews 
+                                        b &nbsp;Отзывов
+                        +room("room-1", "888", "люкс", "9 990₽", "145")
+                        +room("room-2", "840", "", "9 990₽", "65")
+                        +room("room-3", "980", "люкс", "8 500₽", "35")
+                        +room("room-4", "856", "", "7 300₽", "19")
+                        +room("room-5", "740", "", "6 000₽", "44")
+                        +room("room-6", "982", "", "5 800₽", "56")
+                        +room("room-7", "678", "", "5 500₽", "45")
+                        +room("room-8", "450", "", "5 300₽", "39")
+                        +room("room-9", "350", "", "5 000₽", "77")
+                        +room("room-10", "666", "", "5 000₽", "25")
+                        +room("room-11", "444", "", "5 000₽", "15")
+                        +room("room-12", "352", "", "5 000₽", "55")
+                    section(class="body__article--pagination")
+                        include ../components/form&elements/pagination/pagination.pug
+            
+            div(class="main-page__body")
+                include ../components/cards/rooms-found/rooms-found.pug
+                p(class="note--text text") Лучшие номера для вашей работы, отдыха и просто вдохновения
+                include ../components/cards/register-card/register-card.pug
+                include ../components/cards/logindata/logindata.pug
 
 
             // FOOTER

@@ -1,0 +1,136 @@
+.room-details {
+    position: relative;
+    width: 1440px;
+    height: auto;
+
+    .header {
+        margin-top: 0;
+        border-bottom: 1px solid rgba(31, 32, 65, 0.05);
+
+        .header-logo {
+            margin-left: 140px;
+            cursor: pointer;
+        }
+
+        .header-nav {
+            margin: 23px 20px 26px 285px;
+        }
+
+        .nav {
+            width: 446px;
+            height: 21px;
+
+            &-item {
+                margin-left: 20px;
+
+                &:first-child,
+                &:last-child,
+                &:nth-of-type(3) {
+                    margin-left: 0;
+                }
+            }
+
+            &-link {
+                text-decoration: none;
+                font-family: "Montserrat-Regular";
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 17px;
+                color: rgba(31, 32, 65, 0.5);
+            }
+
+            #nav-checkbox--one,
+            #nav-checkbox--two {
+                display: none;
+            }
+
+            .material-icons {
+                margin-top: 1px;
+                margin-left: 1px;
+                color: rgba(31, 32, 65, 0.5);
+                cursor: pointer;
+            }
+        }
+
+        .btn--border {
+            width: 87px;
+
+            &:after {
+                content: "войти";
+                padding: 9.5px 29px;
+            }
+        }
+
+        .btn--purple {
+            width: 196px;
+        }
+    }
+
+    &__image {
+        display: grid;
+        grid-template-areas: "post-1 post-1 post-2" 
+                             "post-1 post-1 post-3"; 
+        grid-template-rows: 243px 242px;
+        grid-template-columns: 520px 461px;
+        .post-1 {
+        grid-area: post-1;
+        background-image: url('../room-details/subheader-main-img.png');
+      }
+      .post-2 {           
+        grid-area: post-2;
+        background-image: url('../room-details/subheader-small-img-1.png');
+      }
+      .post-3 {
+        grid-area: post-3;
+        background-image: url('../room-details/subheader-small-img-2.png');
+      }
+    }
+
+&__body {
+    width: 1440px;
+    height: 939px;
+    display: flex;
+    flex-wrap: wrap;
+    background: #FFFFFF;
+    border-bottom: 1px solid rgba(31, 32, 65, 0.05);
+
+}
+
+.main-page__body {
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-main {
+    margin-top: 0;
+
+    .footer-box {
+        margin-left: 140px;
+    }
+
+    .footer-support {
+        width: 149px;
+    }
+
+    .footer-subscribe {
+        margin-left: 51px;
+
+        .text {
+            width: 260px;
+        }
+    }
+}
+
+.footer-tight {
+    .text {
+        width: 367px;
+        margin-left: 140px;
+    }
+
+    .network {
+        margin-left: 681px;
+    }
+}
+}
