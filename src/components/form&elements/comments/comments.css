@@ -1,0 +1,86 @@
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url('../comments/Montserrat-Regular.svg') format('svg'), url('../comments/Montserrat-Regular.woff') format('woff'), url('../comments/Montserrat-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../like-button/MaterialIcons-Regular.svg') format('svg'), url('../like-button/MaterialIcons-Regular.woff') format('woff'), url('../like-button/MaterialIcons-Regular.ttf') format('truetype');
+}
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+.comments {
+  width: 711px;
+  height: auto;
+  padding: 0 auto;
+  box-sizing: border-box;
+}
+.comments .commentator {
+  width: 278px;
+  height: 48px;
+  display: flex;
+  justify-content: flex-start;
+}
+.comments .commentator .commentator-img {
+  width: 48px;
+  height: 48px;
+  background-image: url(../comments/commentator-img.png);
+  border: 2px solid #FFFFFF;
+  box-sizing: border-box;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.1);
+  border-radius: 32px;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  background-position: -21px -12px;
+}
+.comments .commentator .commentator-id {
+  width: 220px;
+  height: 48px;
+}
+.comments .commentator .commentator-id .commentator-name {
+  margin-top: 5px;
+  margin-bottom: 0px;
+  font-weight: bold;
+  line-height: 14px;
+}
+.comments .commentator .commentator-id .comment-date {
+  margin-top: 10px;
+  line-height: 14px;
+}
+.comments .revie {
+  width: 711px;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+}
+.comments .revie .like-button {
+  margin-left: 6px;
+  margin-right: 14px;
+  margin-top: 13px;
+}
+.comments .revie .revie-text {
+  width: 653px;
+  height: auto;
+  margin-top: 10px;
+}

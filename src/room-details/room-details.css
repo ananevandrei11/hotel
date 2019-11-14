@@ -77,7 +77,6 @@
   width: 1440px;
   height: 939px;
   display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
   background: #FFFFFF;
   border-bottom: 1px solid rgba(31, 32, 65, 0.05);
@@ -86,10 +85,13 @@
   position: relative;
   width: 711px;
   margin-top: 70px;
+  margin-left: 140px;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   z-index: 0;
+}
+.room-details__body .room-description__title {
+  margin: auto;
 }
 .room-details__body .room-description__info {
   width: 291px;
@@ -98,10 +100,64 @@
 .room-details__body .room-description__effect {
   width: 311px;
   height: 170px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-left: 70px;
+}
+.room-details__body .room-description__effect .room-description__title {
+  margin-top: 0;
+  width: 311px;
+}
+.room-details__body .room-description__effect .effect__graphic {
+  width: 120px;
+  height: 120px;
+  margin-left: -10px;
+  margin-top: 11px;
+  background-image: url(../room-details/effect__graphic.png);
+}
+.room-details__body .room-description__effect .effect__list {
+  position: relative;
+  width: 161px;
+  height: 96px;
+  margin-top: 24px;
+}
+.room-details__body .room-description__effect .effect__list ul {
+  margin-left: -20px;
+}
+.room-details__body .room-description__effect .effect__list ul li {
+  list-style-type: none;
+  padding-left: 4px;
+}
+.room-details__body .room-description__effect .effect__list ul li:before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: 9px;
+  top: 22px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #FFE39C 0%, #FFBA9C 100%);
+}
+.room-details__body .room-description__effect .effect__list ul li:nth-of-type(2):before {
+  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+  top: 45px;
+}
+.room-details__body .room-description__effect .effect__list ul li:nth-of-type(3):before {
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  top: 69px;
+}
+.room-details__body .room-description__effect .effect__list ul li:nth-of-type(4):before {
+  background: linear-gradient(180deg, #919191 0%, #3D4975 100%);
+  top: 93px;
 }
 .room-details__body .room-description__comments {
   width: 712px;
   height: 306px;
+}
+.room-details__body .room-description__comments .comments:nth-of-type(2) .commentator-img {
+  background-image: url(../room-details/commentator-img-2.png);
+  background-position: -21px -12px;
 }
 .room-details__body .room-description__rules {
   width: 292px;
@@ -117,6 +173,7 @@
 .room-details__body .room-cost {
   width: 380px;
   margin-top: 70px;
+  margin-left: 70px;
 }
 .room-details .main-page__body {
   display: none;
