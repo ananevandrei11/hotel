@@ -97,6 +97,15 @@
   width: 291px;
   height: 273px;
 }
+.room-details__body .room-description__info .info-room {
+  margin-top: 19px;
+}
+.room-details__body .room-description__info .info-room .text--normal {
+  padding-top: 0px;
+}
+.room-details__body .room-description__info .info-room .info-room__line:nth-of-type(3) {
+  display: none;
+}
 .room-details__body .room-description__effect {
   width: 311px;
   height: 170px;
@@ -154,6 +163,13 @@
 .room-details__body .room-description__comments {
   width: 712px;
   height: 306px;
+  margin-top: -31px;
+}
+.room-details__body .room-description__comments .commentator:nth-of-type(1) {
+  margin-top: 20px;
+}
+.room-details__body .room-description__comments .comments:nth-of-type(2) {
+  margin-top: -10px;
 }
 .room-details__body .room-description__comments .comments:nth-of-type(2) .commentator-img {
   background-image: url(../room-details/commentator-img-2.png);
@@ -162,6 +178,11 @@
 .room-details__body .room-description__rules {
   width: 292px;
   height: 160px;
+  margin-top: -35px;
+}
+.room-details__body .room-description__rules .room-description__title {
+  padding-left: 20px;
+  line-height: 33px;
 }
 .room-details__body .room-description__rules .bullet-list__title {
   display: none;
@@ -169,6 +190,13 @@
 .room-details__body .room-description__cancel {
   width: 341px;
   height: 140px;
+  margin-left: 69px;
+}
+.room-details__body .room-description__cancel .room-description__title {
+  margin-top: -31px;
+}
+.room-details__body .room-description__cancel .room-description-text {
+  margin-top: 17px;
 }
 .room-details__body .room-cost {
   width: 380px;
